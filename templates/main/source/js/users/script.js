@@ -730,11 +730,11 @@ $(document).ready(function () {
 				.removeClass("active");
 		}
 
-		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseover", function (event) {
+		$('.dropdown-menu.active .dropdown-menu__parent').on("mouseenter", function (event) {
 			// $('body').css('overflow','hidden');
 			$('body').addClass('fixed');
 		});
-		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseout", function (event) {
+		$('.dropdown-menu.active .dropdown-menu__parent').on("mouseleave", function (event) {
 			// $('body').css('overflow','visible');
 			$('body').removeClass('fixed');
 		});
