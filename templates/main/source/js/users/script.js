@@ -28,44 +28,50 @@ $(document).ready(function () {
 		};
 	}
 	var windowWidth2 = $(window).width();
-	var mySwiper2 = new Swiper(".js-swiper-two", {
-		slidesPerView: 4,
-		spaceBetween: 25,
-		slidesPerGroup: 4,
-		allowTouchMove: false,
-		// loop: true,
-		// loopFillGroupWithBlank: true,
-		pagination: {
-			el: ".swiper-pagination_2",
-			clickable: true
-		},
-		scrollbar: {
-			el: ".swiper-scrollbar",
-			hide: false,
-			draggable: true
-		},
-		navigation: {
-			nextEl: ".special-offers_next",
-			prevEl: ".special-offers_prev"
-		},
-		breakpoints: {
-			// when window width is <= 320px
-			767: {
-				allowTouchMove: true,
-				slidesPerGroup: 1,
-				spaceBetween: 22,
-				slidesPerView: 2
+
+	$(".special-offers").each(function (index, element) {
+		const $this = $(this);
+		$this.find('.js-swiper-two').addClass("instance-" + index);
+		var mySwiper2 = new Swiper(".js-swiper-two.instance-" + index, {
+			slidesPerView: 4,
+			spaceBetween: 25,
+			slidesPerGroup: 4,
+			allowTouchMove: false,
+			// loop: true,
+			// loopFillGroupWithBlank: true,
+			pagination: {
+				el: ".swiper-pagination_2",
+				clickable: true
 			},
-			600: {
-				allowTouchMove: true,
-				slidesPerGroup: 1,
-				slidesPerView: 1,
-				spaceBetween: 10
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+				draggable: true
+			},
+			// navigation: {
+			// 	nextEl: '".instance-" +' index'  ".special-offers_next"',
+			// 	prevEl: ".special-offers_prev"
+			// },
+			breakpoints: {
+				// when window width is <= 320px
+				767: {
+					allowTouchMove: true,
+					slidesPerGroup: 1,
+					spaceBetween: 22,
+					slidesPerView: 2
+				},
+				600: {
+					allowTouchMove: true,
+					slidesPerGroup: 1,
+					slidesPerView: 1,
+					spaceBetween: 10
+				}
+
+
 			}
-
-
-		}
+		});
 	});
+
 	if ($(".articles-main__slider").length) {
 		var mySwiper202 = new Swiper(".swiper-container-two", {
 			slidesPerView: 4,
@@ -267,9 +273,9 @@ $(document).ready(function () {
 	});
 	var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
 		// Optional parameters
-		// slidesPerGroup: 1,
-		slidesPerView: 1,
-		spaceBetween: 0,
+		// slidesPerGroup: 2,
+		slidesPerView: 2,
+		spaceBetween: 16,
 		// direction: "horizontal",
 		// loop: true,
 		// If we need pagination
