@@ -1319,6 +1319,11 @@ $(document).ready(function () {
 			$(this).attr('title', 'Сделано в  Германии')
 			$(this).parent().append($this.attr('alt'));
 		}
+		if ($(this).attr('alt') == 'Фирменная гарантия') {
+			$(this).attr('alt', 'Фирменная <br> гарантия')
+			$(this).attr('title', 'Фирменная  гарантия')
+			$(this).parent().append($this.attr('alt'));
+		}
 		if ($(this).attr('alt') == 'Сделано в Европе') {
 			$(this).attr('alt', 'Сделано в <br> Европе')
 			$(this).attr('title', 'Сделано в  Европе')

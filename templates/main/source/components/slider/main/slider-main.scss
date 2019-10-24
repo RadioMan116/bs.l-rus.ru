@@ -246,7 +246,7 @@
 
 
 		&__title {
-			width: 744px;
+			width: 550px;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
@@ -254,9 +254,10 @@
 			margin-top: 0;
 			border-radius: 3px;
 			background-color: #394791cf;
-			padding-left: 300px;
-			padding-top: 24px;
-			padding-bottom: 32px;
+			// padding-left: 52px;
+			// padding-top: 24px;
+			// padding-bottom: 32px;
+		padding: 52px;
 
 			.span {
 
