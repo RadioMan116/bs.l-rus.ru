@@ -34,7 +34,7 @@
 			margin-bottom: 8px;
 		}
 
-		&:nth-child(3) {
+		&:nth-child(2) {
 			width: 39%;
 			flex-basis: 310px;
 
@@ -42,7 +42,7 @@
 			.menu-footer__list {
 				display: flex;
 				flex-wrap: wrap;
-				height: 181px;
+				// height: 181px;
 				align-content: baseline;
 			}
 
