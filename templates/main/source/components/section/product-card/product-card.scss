@@ -654,6 +654,7 @@
 	&__back {
 		// width: 100%;
 		display: flex;
+		align-items: center;
 
 		// flex-direction: column;
 		// position: absolute;
@@ -2252,7 +2253,7 @@
 	.middle__header {
 		display: flex;
 		width: 100%;
-		align-items: flex-end;
+		align-items:center;
 
 		.catalog__prop {
 			margin-top: 0;
