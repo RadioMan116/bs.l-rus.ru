@@ -854,7 +854,7 @@
 	// background-color: #f8f8f8;
 	padding: 49px 0 41px;
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 5px;
 	// .reviews-main__title
 
 	&__title {
@@ -897,7 +897,7 @@
 
 	.reviews__section {
 		width: 100%;
-		margin-bottom: 27px;
+		margin-bottom: 14px;
 		align-items: center;
 
 		.ratings__star {
@@ -918,44 +918,17 @@
 	}
 
 	.reviews-list__col_desc {
-		margin-left: auto;
+		margin-left: 21px;
 		display: flex;
 		align-items: center;
 	}
 
-	.reviews-list__field_header {
-		// padding-right: 21px;
-		margin-bottom: 10px;
-
-		.ratings__star {
-			width: 14px;
-			height: 14px;
-			background: url(../images/star.svg) no-repeat;
-			background-position: 50%;
-			background-size: 12px 12px;
-		}
-
-		.ratings__none {
-			background: url(../images/rectangle-2.svg) no-repeat;
-			background-position: 50%;
-			background-size: 12px 12px;
-			// background-position: 50%;
-			// background-size: 21px 20px;
-		}
-	}
 
 	.reviews-list__col_date {
 		color: #666666;
 		font-family: Arial;
 		font-size: 14px;
 		line-height: 24px;
-	}
-
-	.reviews-list__field_footer {
-		color: #333333;
-		font-family: Arial;
-		font-size: 14px;
-		line-height: 22px;
 	}
 
 	.reviews-main__link {
@@ -976,6 +949,62 @@
 		color: #394791;
 		font-family: Arial;
 		font-size: 14px;
+		padding-right: 25px;
+		padding-left: 33px;
+	}
+
+	.reviews-list__field {
+		padding-right: 25px;
+		padding-left: 33px;
+	}
+
+	.reviews-list__field_header {
+		padding-right: 21px;
+		padding-left: 25px;
+		margin-bottom: 7px;
+		border-top: none;
+
+		.ratings__star {
+			width: 14px;
+			height: 14px;
+			background: url(../images/star.svg) no-repeat;
+			background-position: 50%;
+			background-size: 12px 12px;
+		}
+
+		.ratings__none {
+			background: url(../images/rectangle-2.svg) no-repeat;
+			background-position: 50%;
+			background-size: 12px 12px;
+			// background-position: 50%;
+			// background-size: 21px 20px;
+		}
+
+		.reviews-list__col_desc {
+			margin-left: auto;
+		}
+
+	}
+
+	.reviews-list__field_footer {
+		color: #333333;
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 22px;
+		padding-top: 5px;
+
+		p {
+			display: flex;
+			flex-direction: column;
+		}
+
+		b {
+			margin-bottom: 9px;
+		}
+	}
+
+	.reviews-list__col:first-child {
+		width: auto;
 	}
 
 	.js-reviews-main {}
@@ -987,8 +1016,6 @@
 	.swiper-pagination-reviews-main {
 		position: absolute;
 	}
-
-
 
 	.swiper-button-prev {
 		background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
@@ -1036,8 +1063,11 @@
 	.swiper-slide {
 		padding-left: 0;
 		background: white;
-		padding-right: 21px;
+		padding-right: 0px;
 		padding-bottom: 18px;
+		border: 1px solid #f1f1f1;
+		background-color: #ffffff;
+
 	}
 
 	.ratings__number {
@@ -1051,8 +1081,11 @@
 
 	.reviews-main__link {
 		color: #394791;
-		font-family: Arial;
+		font-family: "Roboto Condensed";
 		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
 	}
 
 	@media screen and (max-width: 767px) {

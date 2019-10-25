@@ -32,6 +32,8 @@ $(document).ready(function () {
 	$(".special-offers").each(function (index, element) {
 		const $this = $(this);
 		$this.find('.js-swiper-two').addClass("instance-" + index);
+		$this.find('.special-offers_next').addClass("instance-button-" + index);
+		$this.find('.special-offers_prev').addClass("instance-button-" + index);
 		var mySwiper2 = new Swiper(".js-swiper-two.instance-" + index, {
 			slidesPerView: 4,
 			spaceBetween: 25,
@@ -48,10 +50,10 @@ $(document).ready(function () {
 				hide: false,
 				draggable: true
 			},
-			// navigation: {
-			// 	nextEl: '".instance-" +' index'  ".special-offers_next"',
-			// 	prevEl: ".special-offers_prev"
-			// },
+			navigation: {
+				nextEl: ".special-offers_next.instance-button-" + index,
+				prevEl: ".special-offers_prev.instance-button-" + index
+			},
 			breakpoints: {
 				// when window width is <= 320px
 				767: {
@@ -275,7 +277,7 @@ $(document).ready(function () {
 		// Optional parameters
 		// slidesPerGroup: 2,
 		slidesPerView: 2,
-		spaceBetween: 16,
+		spaceBetween: 28,
 		// direction: "horizontal",
 		// loop: true,
 		// If we need pagination
