@@ -1,6 +1,7 @@
 .text-default,
 .articles-main__info,
-.about-store,.about-brand {
+.about-store,
+.about-brand {
 	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
@@ -386,7 +387,8 @@
 			position: relative;
 			overflow: hidden;
 			margin-bottom: 19px;
-			margin-top: 14px;
+			margin-top: 29px;
+			flex-direction: column;
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
@@ -404,13 +406,28 @@
 				left: 0;
 				top: 0;
 				width: 100%;
-				height: 100%;
+				height: calc(100% - 36px);
 			}
 
 			&:hover {
 				img {
 					transform: scale(1.1);
 				}
+			}
+
+			span {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				background: white;
+				width: 100%;
+				// margin-top: 16px;
+				height: 45px;
+				display: flex;
+				align-items: flex-end;
+				z-index: 9;
 			}
 		}
 	}
@@ -694,6 +711,7 @@
 				&:before {
 					width: 63px;
 				}
+
 				&:after {
 					content: '';
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") center/16px no-repeat;
