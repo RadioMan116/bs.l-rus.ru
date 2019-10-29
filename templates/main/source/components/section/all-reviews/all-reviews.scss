@@ -951,6 +951,26 @@
 		font-size: 14px;
 		padding-right: 25px;
 		padding-left: 33px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 2;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		color: transparent;
+		transition: 0s;
+
+		&:before {
+			height: 100%;
+			background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(hsla(0, 0%, 100%, .6)));
+			background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, .6));
+			width: 100%;
+			content: '';
+			position: absolute;
+			left: 0;
+			z-index: -1;
+		}
 	}
 
 	.reviews-list__field {
@@ -1054,6 +1074,11 @@
 
 	.swiper-container {
 		margin-bottom: 39px;
+		height: 215px;
+
+		&:hover {
+			overflow: visible;
+		}
 	}
 
 	.swiper-wrapper {
@@ -1067,7 +1092,44 @@
 		padding-bottom: 18px;
 		border: 1px solid #f1f1f1;
 		background-color: #ffffff;
+		transition: 0.3s;
+		opacity: 0;
 
+		&-active,
+		&-next {
+			opacity: 1;
+		}
+
+
+		p {
+			&:nth-child(n+2) {
+				max-height: 0;
+				overflow: hidden;
+				margin-bottom: 0;
+				min-height: 0;
+			}
+		}
+
+		&:hover {
+			max-height: unset;
+			transition: 0.3s;
+			height: fit-content;
+
+			p {
+				max-height: unset;
+				overflow: hidden;
+				margin-bottom: 16px;
+				min-height: unset;
+			}
+
+			.reviews-list__link {
+				color: #394791;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
 	}
 
 	.ratings__number {
@@ -1086,6 +1148,13 @@
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
+
+
+		&:hover {
+			color: #fff;
+			background: #394791 !important;
+		}
+
 	}
 
 	@media screen and (max-width: 767px) {

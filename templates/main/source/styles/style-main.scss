@@ -179,6 +179,9 @@ body.fancybox-active {
 	cursor: pointer;
 	z-index: 10;
 }
+.swiper-pagination-bullet-active{
+	background: #394791!important;
+}
 
 @media screen and (max-width: 767px) {
 	h1.title {

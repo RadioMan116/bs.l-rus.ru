@@ -84,6 +84,11 @@
 		transform: translateY(-4px);
 		padding: 6px 12px;
 		text-decoration: none !important;
+
+		&:hover {
+			color: #fff;
+			background: #394791 !important;
+		}
 	}
 
 	.container {
