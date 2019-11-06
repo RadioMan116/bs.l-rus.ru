@@ -1161,14 +1161,15 @@
 	@media screen and (max-width: 767px) {
 		padding-top: 26px;
 		padding-bottom: 32px;
-		margin-bottom: 35px;
+		margin-bottom: 3px;
 
 		.reviews-main__title {
 			color: #212121;
 			font-family: "Roboto Condensed";
-			font-size: 5vw;
+			font-size: 24px;
+			line-height: 28px;
 			font-weight: 400;
-			margin-bottom: 28px;
+			margin-bottom: 12px;
 			line-height: 27px;
 		}
 
@@ -1200,7 +1201,7 @@
 		}
 
 		.reviews-list__col:first-child {
-			margin-bottom: 8px;
+			margin-bottom: 4px;
 		}
 
 		.reviews__section {
@@ -1235,16 +1236,17 @@
 			line-height: 24px;
 		}
 
-
 		.reviews-list {
 			&__field {
 				flex-wrap: wrap;
-				padding: 0 0 2px !important;
+				padding: 0 0 2px;
 				border: 0;
 
 				&:nth-child(2) {
-					margin-top: 30px;
-					margin-bottom: 8px;
+					margin-top: 0px;
+					margin-bottom: 0px;
+					padding-top: 17px;
+
 
 					&~.reviews-list__field {
 						margin-bottom: 8px;
@@ -1255,12 +1257,29 @@
 				&:nth-child(4) {
 					margin-bottom: 0 !important;
 				}
+
+				.reviews-list__col_desc {
+					margin-left: 0;
+
+					.ratings__star {
+						width: 20px;
+						height: 14px;
+						background-position: left;
+						background-size: 17px;
+					}
+				}
+
+				&_header {
+					border-bottom: 1px solid #f1f1f1;
+					margin: 0 -16px;
+					padding: 0 16px 10px;
+				}
 			}
 
 			&__col[itemprop="author"] {
 				width: 100% !important;
-				margin-bottom: 15px;
-				margin-top: 8px;
+				margin-bottom: 4px !important;
+				margin-top: 17px;
 				flex-basis: unset;
 			}
 
@@ -1281,27 +1300,22 @@
 			order: 5;
 		}
 
-		.reviews-list__col_desc {
-			margin-left: 0;
-
-			.ratings__star {
-				width: 20px;
-				height: 14px;
-				background-position: left;
-				background-size: 17px;
-			}
-		}
-
 		.swiper-container {
 			margin: 0 -16px;
-			padding: 0 16px !important;
+			padding: 0 !important;
 			background-color: #ffffff;
 			width: auto;
+			height: unset;
+
+			&:hover {
+				overflow: hidden;
+			}
 		}
 
 		.reviews-main__item {
 			// margin: 0 -16px;
-			padding-right: 0px;
+			padding-right: 16px;
+			padding-left: 16px;
 			padding-bottom: 30px;
 		}
 	}

@@ -354,7 +354,7 @@
 
 @media screen and (max-width: 767px) {
 	.gallery {
-		margin-bottom: 31px;
+		margin-bottom: 0px;
 		max-width: 100%;
 
 		.swiper {
@@ -402,6 +402,7 @@
 				flex-direction: column;
 				z-index: 99;
 				height: 100%;
+				width: 100%;
 
 				.span {
 					&__small {
@@ -429,7 +430,9 @@
 		}
 
 		&__items {
-			padding: 16px;
+			padding: 16px 0px;
+			max-width: 100%;
+			margin: 0;
 		}
 
 		&__item {
@@ -450,9 +453,8 @@
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 19px;
-			padding: 0px 12px 5px 16px;
+			padding: 0px 5px 5px 16px;
 		}
-
 
 		&__tablet {
 			display: flex;
@@ -482,6 +484,7 @@
 			}
 		}
 
+
 		&+.special-offers {
 			margin-top: 0px;
 		}
@@ -491,6 +494,9 @@
 			.special-offers {
 				margin-top: 0px;
 			}
+		}
+		+.category {
+
 		}
 	}
 

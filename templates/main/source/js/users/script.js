@@ -293,6 +293,9 @@ $(document).ready(function () {
 			767: {
 				spaceBetween: 16
 			},
+			550: {
+				slidesPerView: 1,
+			}
 		},
 	});
 	var mySwiper45 = new Swiper(".product-card .js-container-upsale", {
@@ -1501,13 +1504,23 @@ $(document).ready(function () {
 			Inputmask("customAlias").mask("[type=tel]");
 		});
 	});
-	$(".js-about-store__button").click(function () {
+	$(".js-seo-text__button").click(function () {
 		if ($(this).parent().hasClass("active") == false) {
 			$(this).text('Свернуть');
 			$(this).parent().addClass("active");
 
 		} else {
 			$(this).parent().removeClass("active");
+			$(this).text("Читать подробнее");
+		}
+	});
+	$(".js-about-brand__button").click(function () {
+		if ($(this).parent().hasClass("active") == false) {
+			$(this).text('Свернуть');
+			$('article.about-brand').addClass("active");
+
+		} else {
+			$('article.about-brand').removeClass("active");
 			$(this).text("Читать подробнее");
 		}
 	});
@@ -2385,7 +2398,7 @@ $(window).on('load', function () {
 				clickable: true
 			},
 			breakpoints: {
-				560:{
+				560: {
 					slidesPerView: 1,
 				}
 			},
