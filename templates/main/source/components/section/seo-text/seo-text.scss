@@ -124,9 +124,9 @@
 		}
 
 		p {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: baseline;
+			// display: flex;
+			// flex-wrap: wrap;
+			// align-items: baseline;
 			width: 100%;
 			color: #262626;
 			font-family: Arial;
@@ -334,9 +334,13 @@
 	@media screen and (max-width: 767px) {
 		margin-bottom: 22px;
 		position: relative;
-		height: 830px;
+		// height: 830px;
 		overflow: hidden;
-		padding-bottom: 24px;
+		padding-bottom: 32px;
+		padding-top: 33px;
+		margin: 0 -16px 34px !important;
+		padding-left: 16px;
+		padding-right: 16px;
 
 		&.active {
 			height: auto;
@@ -362,9 +366,9 @@
 		}
 
 		p {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: baseline;
+			// display: flex;
+			// flex-wrap: wrap;
+			// align-items: baseline;
 			width: 100%;
 			color: #262626;
 			font-family: Arial;
