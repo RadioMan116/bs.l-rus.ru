@@ -67,6 +67,12 @@
 				text-decoration: none !important
 			}
 		}
+
+		text-decoration: none !important;
+
+		* {
+			text-decoration: none !important;
+		}
 	}
 
 	// .category__caption
@@ -232,7 +238,8 @@
 
 		+.special-offers.promotional-goods {
 			margin-top: 24px;
-			+.special-offers{
+
+			+.special-offers {
 				margin-top: 25px;
 			}
 		}

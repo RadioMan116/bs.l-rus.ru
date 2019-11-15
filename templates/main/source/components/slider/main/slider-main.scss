@@ -433,6 +433,10 @@
 			padding: 16px 0px;
 			max-width: 100%;
 			margin: 0;
+
+			.container {
+				align-items: baseline;
+			}
 		}
 
 		&__item {
@@ -464,7 +468,7 @@
 		}
 
 		&__el {
-			height: unset;
+			height: auto;
 			margin-left: unset;
 			width: 100%;
 			margin-bottom: 8px;
@@ -477,6 +481,7 @@
 		&__link {
 			flex-direction: row;
 			margin: 0 auto;
+			align-items: center;
 
 			img {
 				width: 20.83%;
@@ -495,9 +500,8 @@
 				margin-top: 0px;
 			}
 		}
-		+.category {
 
-		}
+		+.category {}
 	}
 
 	// .fixed {
