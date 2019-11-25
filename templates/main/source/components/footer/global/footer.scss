@@ -59,6 +59,12 @@
 			}
 		}
 
+		&:nth-child(3) {
+			flex-grow: 0;
+			width: fit-content;
+			flex-basis: auto;
+		}
+
 		&:nth-child(4) {
 			width: 15%;
 			flex-basis: 180px;
