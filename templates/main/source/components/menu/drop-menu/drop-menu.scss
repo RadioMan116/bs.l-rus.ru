@@ -133,6 +133,7 @@
 				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.1);
 				z-index: 99999;
 				top: 31px;
+				min-width: 100%;
 			}
 
 		}
@@ -236,7 +237,7 @@
 
 		.time-work {
 			color: #666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
@@ -244,7 +245,7 @@
 
 			i {
 				color: #666;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 13px;
 				line-height: 22px;
 				text-align: left;
