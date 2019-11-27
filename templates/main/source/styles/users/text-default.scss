@@ -68,7 +68,7 @@
 		margin-top: 18px;
 	}
 
-	p,div[style="text-align: justify;"] {
+	p,div[style="text-align: justify;"],div[style="text-align: start;"],span[style="text-align: justify;"] {
 		display: block;
 		width: 100%;
 		color: #333333;
@@ -132,7 +132,7 @@
 		}
 	}
 
-	div[style="text-align: justify;"]{
+	div[style="text-align: justify;"],div[style="text-align: start;"],span[style="text-align: justify;"]{
 		br{
 			display: none;
 		}
@@ -473,7 +473,7 @@
 			padding-top: 0;
 		}
 
-		p {
+		p,div[style="text-align: justify;"],div[style="text-align: start;"],,span[style="text-align: justify;"] {
 			font-size: 14px;
 			line-height: 22px;
 
