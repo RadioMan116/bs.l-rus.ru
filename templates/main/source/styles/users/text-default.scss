@@ -132,6 +132,12 @@
 		}
 	}
 
+	div[style="text-align: justify;"]{
+		br{
+			display: none;
+		}
+	}
+
 	ol {
 		color: #333333;
 		font-family: Arial;
