@@ -237,41 +237,49 @@ $(document).ready(function () {
 			}
 		}
 	});
-	var mySwiper33 = new Swiper(".js-swiper-promotional-goods", {
-		slidesPerView: 4,
-		spaceBetween: 27,
-		slidesPerGroup: 1,
-		allowTouchMove: false,
-		// loop: true,
-		// loopFillGroupWithBlank: true,
-		pagination: {
-			el: ".js-promotional-goods-pagination",
-			clickable: true
-		},
-		scrollbar: {
-			el: ".swiper-scrollbar",
-			hide: false,
-			draggable: true
-		},
-		navigation: {
-			nextEl: ".js-promotional-goods_next",
-			prevEl: ".js-promotional-goods_prev"
-		},
-		breakpoints: {
-			767: {
-				allowTouchMove: true,
-				slidesPerGroup: 1,
-				spaceBetween: 22,
-				slidesPerView: 2
-			},
 
-			600: {
-				allowTouchMove: true,
-				slidesPerGroup: 1,
-				slidesPerView: 1,
-				spaceBetween: 10
+	$(".promotional-goods").each(function (index, element) {
+		const $this = $(this);
+		$this.find('.js-swiper-promotional-goods').addClass("instance-" + index);
+		$this.find('.promotional-goods_next').addClass("instance-button-" + index);
+		$this.find('.promotional-goods_prev').addClass("instance-button-" + index);
+		$this.find('.js-promotional-goods-pagination').addClass("instance-pagination-" + index);
+		var mySwiper33 = new Swiper(".js-swiper-promotional-goods.instance-" + index, {
+			slidesPerView: 4,
+			spaceBetween: 27,
+			slidesPerGroup: 1,
+			allowTouchMove: false,
+			// loop: true,
+			// loopFillGroupWithBlank: true,
+			pagination: {
+				el: ".js-promotional-goods-pagination.instance-pagination-" + index,
+				clickable: true
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+				draggable: true
+			},
+			navigation: {
+				nextEl: ".js-promotional-goods_next.instance-button-" + index,
+				prevEl: ".js-promotional-goods_prev.instance-button-" + index
+			},
+			breakpoints: {
+				767: {
+					allowTouchMove: true,
+					slidesPerGroup: 1,
+					spaceBetween: 22,
+					slidesPerView: 2
+				},
+
+				600: {
+					allowTouchMove: true,
+					slidesPerGroup: 1,
+					slidesPerView: 1,
+					spaceBetween: 10
+				}
 			}
-		}
+		});
 	});
 	var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
 		// Optional parameters

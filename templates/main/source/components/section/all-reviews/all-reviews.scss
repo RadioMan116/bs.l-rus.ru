@@ -885,7 +885,9 @@
 
 	// .reviews-main__subtitle
 
-	&__subtitle {}
+	&__subtitle {
+		font-weight: 700;
+	}
 
 	// .reviews-main__text
 
@@ -964,8 +966,8 @@
 
 		&:before {
 			height: 100%;
-			background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(hsla(0, 0%, 100%, .6)));
-			background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, .6));
+			background: rgb(255, 255, 255);
+			background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.6) 100%);
 			width: 100%;
 			content: '';
 			position: absolute;
@@ -1019,7 +1021,8 @@
 			flex-direction: column;
 		}
 
-		b {
+		b,
+		.reviews-main__subtitle {
 			margin-bottom: 9px;
 		}
 	}
@@ -1102,7 +1105,8 @@
 		}
 
 
-		p {
+		p,
+		.reviews-main__field {
 			&:nth-child(n+2) {
 				max-height: 0;
 				overflow: hidden;
