@@ -59,9 +59,9 @@
 		}
 
 		&:hover {
-			transform: scale(1.05);
+			// transform: scale(1.05);
 			border: 0.5px solid #394791;
-			z-index: 1;
+			// z-index: 1;
 			.category__caption {
 				// color: #ffffff;
 				// text-decoration: none !important;
@@ -112,7 +112,7 @@
 		line-height: 19px;
 		background-color: #394791;
 		margin: auto -150px 0px -18px;
-		padding: 17px 14px 15px 24px;
+		padding: 17px 14px 15px 18px;
 		min-height: 108px;
 	}
 
