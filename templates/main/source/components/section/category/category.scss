@@ -27,7 +27,7 @@
 		background-color: #f8f8f8;
 		// height: 144px;
 		// position: relative;
-		border: 1px solid transparent;
+		border: 0.5px solid transparent;
 
 		&:nth-child(-n+3) {
 			margin-bottom: 16px;
@@ -60,7 +60,7 @@
 
 		&:hover {
 			transform: scale(1.05);
-			border: 1px solid #394791;
+			border: 0.5px solid #394791;
 			z-index: 1;
 			.category__caption {
 				// color: #ffffff;
@@ -111,7 +111,7 @@
 		font-size: 12px;
 		line-height: 19px;
 		background-color: #394791;
-		margin: auto -150px 0px -24px;
+		margin: auto -150px 0px -18px;
 		padding: 17px 14px 15px 24px;
 		min-height: 108px;
 	}
