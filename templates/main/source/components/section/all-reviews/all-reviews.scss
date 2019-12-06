@@ -954,7 +954,7 @@
 		padding-right: 25px;
 		padding-left: 33px;
 		position: absolute;
-		bottom: 0;
+		bottom: 0px;
 		width: 100%;
 		z-index: 2;
 		height: 50px;
@@ -962,7 +962,7 @@
 		align-items: flex-end;
 		// color: transparent;
 		transition: 0s;
-		padding-bottom: 5px;
+		padding-bottom: 0px;
 
 		&:before {
 			height: 100%;
@@ -1078,11 +1078,11 @@
 
 	.swiper-container {
 		margin-bottom: 39px;
-		height: 220px;
+		height: 239px;
 
-		&:hover {
-			overflow: visible;
-		}
+		// &:hover {
+		// 	overflow: visible;
+		// }
 	}
 
 	.swiper-wrapper {

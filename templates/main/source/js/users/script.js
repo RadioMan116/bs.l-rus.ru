@@ -247,7 +247,7 @@ $(document).ready(function () {
 		var mySwiper33 = new Swiper(".js-swiper-promotional-goods.instance-" + index, {
 			slidesPerView: 4,
 			spaceBetween: 27,
-			slidesPerGroup: 1,
+			slidesPerGroup: 4,
 			allowTouchMove: false,
 			// loop: true,
 			// loopFillGroupWithBlank: true,

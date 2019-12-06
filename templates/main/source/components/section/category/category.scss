@@ -23,10 +23,11 @@
 		flex-direction: column;
 		background-repeat: no-repeat;
 		background-position: calc(100% - 21px) 15px;
-		padding: 22px 150px 0px 24px;
+		padding: 22px 150px 0px 18px;
 		background-color: #f8f8f8;
 		// height: 144px;
 		// position: relative;
+		border: 1px solid transparent;
 
 		&:nth-child(-n+3) {
 			margin-bottom: 16px;
@@ -58,6 +59,9 @@
 		}
 
 		&:hover {
+			transform: scale(1.1);
+			border: 1px solid #394791;
+			z-index: 1;
 			.category__caption {
 				// color: #ffffff;
 				// text-decoration: none !important;
@@ -94,6 +98,9 @@
 		font-weight: 700;
 		line-height: 24px;
 		margin-bottom: 24px;
+		flex-grow: 1;
+		align-items: flex-end;
+		display: flex;
 	}
 
 	// .category__desc

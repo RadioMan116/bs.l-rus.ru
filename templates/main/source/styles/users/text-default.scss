@@ -445,6 +445,15 @@
 	}
 
 
+	.pic_left {
+		float: left;
+		margin: 0 25px 20px 0;
+	}
+
+	.pic_right {
+		float: right;
+		margin: 0 0 25px 20px;
+	}
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
