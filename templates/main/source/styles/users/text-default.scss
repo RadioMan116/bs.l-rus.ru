@@ -68,7 +68,7 @@
 		margin-top: 18px;
 	}
 
-	p	{
+	p {
 		// display: block;
 		width: 100%;
 		color: #333333;
@@ -173,15 +173,19 @@
 		b {
 			margin-bottom: 16px
 		}
+
 		ul {
-			margin-bottom:0 ;
-			+p{
-				margin:6px 0 0;
-				+p{
-					margin:6px 0 0;
+			margin-bottom: 0;
+
+			+p {
+				margin:4px 0 12px;
+
+				+p {
+					margin:4px 0 12px;
 				}
 			}
-			li{
+
+			li {
 				margin-bottom: 2px;
 			}
 		}
@@ -448,7 +452,8 @@
 	}
 
 	.about-store__button,
-	.seo-text__button,.about-brand__button {
+	.seo-text__button,
+	.about-brand__button {
 		display: none;
 	}
 
