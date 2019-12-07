@@ -173,6 +173,12 @@
 		b {
 			margin-bottom: 16px
 		}
+		ul {
+			margin-bottom:0 ;
+			+p{
+				margin: 0;
+			}
+		}
 	}
 
 	li {
