@@ -1231,7 +1231,31 @@ $(document).ready(function () {
 			firstDropdownMenu.classList.add("active");
 		})();
 
+		$(".catalog .instructions").each(function (indx, element) {
 
+
+			var mySwiper22 = new Swiper('.instructions__items.swiper-container', {
+				// navigation: {
+				// 	nextEl: ".practical-features__next",
+				// 	prevEl: ".practical-features__prev"
+				// },
+				slidesPerView: 2,
+				// slidesPerGroup: 1,
+				spaceBetween: 12,
+				pagination: {
+					el: ".swiper-pagination-instructions",
+					clickable: true
+				},
+				breakpoints: {
+					550: {
+						slidesPerView: 1
+					},
+				}
+			});
+
+
+			console.log($(this))
+		});
 
 
 	}
