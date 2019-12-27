@@ -1,7 +1,8 @@
 .text-default,
 .articles-main__info,
 .about-store,
-.about-brand,.description {
+.about-brand,
+.description {
 	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
@@ -178,10 +179,10 @@
 			margin-bottom: 0;
 
 			+p {
-				margin:4px 0 12px;
+				margin: 4px 0 12px;
 
 				+p {
-					margin:4px 0 12px;
+					margin: 4px 0 12px;
 				}
 			}
 
@@ -239,8 +240,15 @@
 		}
 
 		td:not(:first-child) {
-			flex-grow: 1;
-			min-width: 80px;
+			flex-grow: 0;
+			min-width:150px;
+			flex-shrink: 0;
+			// margin-left: auto;
+		}
+
+		p {
+			margin: 0;
+			width: auto;
 		}
 	}
 
@@ -249,12 +257,14 @@
 		color: #333333;
 		font-size: 14px;
 		display: flex;
-		flex-direction: column;
-		padding: 11px 0 11px 13px;
+		flex-direction: row;
+		padding: 11px 11px 13px;
+		align-items: center;
 
 		&:first-child {
-			width: 286px;
-			flex-shrink: 0;
+			// width: 286px;
+			// flex-shrink: 0;
+			margin-right: auto;
 		}
 
 		i {
