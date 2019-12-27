@@ -234,15 +234,16 @@
 				font-family: Arial;
 				font-size: 12px;
 				font-weight: 700;
-
+				padding: 11px 7px 13px;
 
 			}
 		}
 
 		td:not(:first-child) {
-			flex-grow: 0;
-			min-width:150px;
+			flex-grow: 1;
+			min-width: 150px;
 			flex-shrink: 0;
+			max-width: 200px;
 			// margin-left: auto;
 		}
 
@@ -265,6 +266,8 @@
 			// width: 286px;
 			// flex-shrink: 0;
 			margin-right: auto;
+			max-width: 575px;
+			width: 100%;
 		}
 
 		i {
