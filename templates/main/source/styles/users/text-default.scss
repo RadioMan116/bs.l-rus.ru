@@ -488,6 +488,16 @@
 
 	.table_delivery {
 		tr {
+
+			td:last-child {
+				b {
+					font-family: Arial;
+					color: #333;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+
 			&:first-child {
 				td {
 					color: #666666;
@@ -498,16 +508,8 @@
 
 					b {
 						font-size: 14px;
+						font-weight: 700;
 					}
-				}
-			}
-
-			td:last-child {
-				b {
-					font-family: Arial;
-					color: #333;
-					font-size: 14px;
-					font-weight: 400;
 				}
 			}
 		}
