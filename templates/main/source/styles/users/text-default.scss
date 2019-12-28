@@ -486,6 +486,33 @@
 		margin: 0 0 25px 20px;
 	}
 
+	.table_delivery {
+		tr {
+			&:first-child {
+				td {
+					color: #666666;
+					font-family: Arial;
+					font-size: 14px;
+					font-weight: 700;
+					padding: 11px 7px 13px;
+
+					b {
+						font-size: 14px;
+					}
+				}
+			}
+
+			td:last-child {
+				b {
+					font-family: Arial;
+					color: #333;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
 
