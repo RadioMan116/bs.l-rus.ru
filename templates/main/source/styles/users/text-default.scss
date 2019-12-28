@@ -498,19 +498,22 @@
 				}
 			}
 
-			&:first-child {
-				td {
-					color: #666666;
-					font-family: Arial;
-					font-size: 14px;
-					font-weight: 700;
-					padding: 11px 7px 13px;
 
+			td {
+				color: #666666;
+				font-family: Arial;
+				font-size: 14px;
+				font-weight: 700;
+				padding: 11px 7px 13px;
+
+				&[colspan="2"] {
 					b {
 						font-size: 14px;
 						font-weight: 700;
 					}
 				}
+
+
 			}
 		}
 	}
