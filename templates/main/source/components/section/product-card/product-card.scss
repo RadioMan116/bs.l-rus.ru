@@ -462,7 +462,7 @@
 					box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
 					border-radius: 3px;
 					background-color: #ffffff;
-					padding:17px;
+					padding: 17px;
 					z-index: 100;
 					bottom: 100%;
 					height: auto;
@@ -2253,7 +2253,7 @@
 	.middle__header {
 		display: flex;
 		width: 100%;
-		align-items:center;
+		align-items: center;
 
 		.catalog__prop {
 			margin-top: 0;
@@ -3394,6 +3394,19 @@
 					&::before,
 					&::after {
 						display: none;
+					}
+
+					picture {
+						min-height: 235px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+					}
+
+					img {
+						// min-height: 100px;
+						height: auto !important;
 					}
 				}
 
