@@ -588,7 +588,7 @@
 	}
 
 	&__all {
-		color: #666666;
+		color: $base;
 		font-family: Arial;
 		font-size: 14px;
 		line-height: 24px;
@@ -967,7 +967,7 @@
 		&:before {
 			height: 100%;
 			background: rgb(255, 255, 255);
-			background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.6) 100%);
+			background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.6) 100%);
 			width: 100%;
 			content: '';
 			position: absolute;
@@ -1157,7 +1157,7 @@
 
 		&:hover {
 			color: #fff;
-			background: #394791 !important;
+			// background: #394791 !important;
 		}
 
 	}

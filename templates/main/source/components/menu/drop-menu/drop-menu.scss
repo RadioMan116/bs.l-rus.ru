@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	margin-left: 5%;
+	// margin-left:auto;
 	// margin-top: auto;
 	// margin-bottom: auto;
 	flex-grow: 1;
@@ -62,7 +63,7 @@
 
 				&:hover {
 					a {
-						color: #394791;
+						color: $base;
 						text-decoration: none;
 					}
 				}
@@ -70,7 +71,7 @@
 
 			&:hover {
 
-				color: #394791;
+				color: $base;
 				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
 			}
 
@@ -94,7 +95,7 @@
 			background: #ffffff;
 
 			&:hover {
-				color: #394791;
+				color: $base;
 				text-decoration: underline;
 			}
 		}
@@ -104,7 +105,7 @@
 
 			.dropdown-menu__list {
 				display: flex;
-				overflow-y: auto;
+				overflow-y: scroll;
 				margin-right: -16px;
 				padding-right: 20px;
 
@@ -123,7 +124,7 @@
 				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
 				z-index: 999;
 				position: relative;
-				color: #394791;
+				color: $base;
 				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97%/14px no-repeat;
 			}
 
@@ -133,7 +134,6 @@
 				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.1);
 				z-index: 99999;
 				top: 31px;
-				min-width: 100%;
 			}
 
 		}
@@ -166,12 +166,12 @@
 		white-space: nowrap;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 	}
 
 	@media (max-width: 1200px) {
-		margin-left: 58px;
+		margin-left: 2%;
 	}
 
 	.time-work {
@@ -181,7 +181,8 @@
 
 @media (max-width: 767px) {
 	.menu.active {
-		height: 100vh;
+		// height: 100vh;
+		// height: 410px;
 		// overflow-y: scroll;
 	}
 
@@ -195,6 +196,7 @@
 		margin-left: 0;
 		padding-left: 0;
 
+
 		.container {
 			padding: 0;
 			padding-top: 3px;
@@ -206,6 +208,7 @@
 			margin-left: 0 !important;
 			flex-wrap: wrap;
 			padding-left: 31px;
+			width: 100%;
 
 			&__three {
 				margin-bottom: 0;
