@@ -356,31 +356,28 @@ $(document).ready(function () {
 		}
 	});
 
-	var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
-		// Optional parameters
-		// slidesPerGroup: 1,
-		slidesPerView: 2,
-		spaceBetween: 28,
-		// direction: "horizontal",
-		// loop: true,
-		// If we need pagination
-		navigation: {
-			nextEl: ".reviews-main__next",
-			prevEl: ".reviews-main__prev"
+var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
+	// Optional parameters
+	// slidesPerGroup: 1,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	// direction: "horizontal",
+	// loop: true,
+	// If we need pagination
+	navigation: {
+		nextEl: ".reviews-main__next",
+		prevEl: ".reviews-main__prev"
+	},
+	pagination: {
+		el: ".swiper-pagination-reviews-main",
+		clickable: true
+	},
+	breakpoints: {
+		767: {
+			spaceBetween: 16
 		},
-		pagination: {
-			el: ".swiper-pagination-reviews-main",
-			clickable: true
-		},
-		breakpoints: {
-			767: {
-				spaceBetween: 16
-			},
-			550: {
-				slidesPerView: 1,
-			}
-		},
-	});
+	},
+});
 	var mySwiper45 = new Swiper(".product-card .js-container-upsale", {
 		// Optional parameters
 		// slidesPerGroup: 1,

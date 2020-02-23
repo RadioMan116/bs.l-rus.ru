@@ -224,12 +224,12 @@
 		}
 
 		.about-brand__button {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			display: none;
 			padding-bottom: 2px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			width: fit-content !important;
 			position: absolute;
 			// left: 16px;
@@ -387,12 +387,12 @@
 		}
 
 		.about-store__button {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			display: block;
 			padding-bottom: 2px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			width: fit-content;
 			position: absolute;
 			left: 16px;
