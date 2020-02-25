@@ -356,28 +356,28 @@ $(document).ready(function () {
 		}
 	});
 
-var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
-	// Optional parameters
-	// slidesPerGroup: 1,
-	slidesPerView: 1,
-	spaceBetween: 0,
-	// direction: "horizontal",
-	// loop: true,
-	// If we need pagination
-	navigation: {
-		nextEl: ".reviews-main__next",
-		prevEl: ".reviews-main__prev"
-	},
-	pagination: {
-		el: ".swiper-pagination-reviews-main",
-		clickable: true
-	},
-	breakpoints: {
-		767: {
-			spaceBetween: 16
+	var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
+		// Optional parameters
+		// slidesPerGroup: 1,
+		slidesPerView: 1,
+		spaceBetween: 0,
+		// direction: "horizontal",
+		// loop: true,
+		// If we need pagination
+		navigation: {
+			nextEl: ".reviews-main__next",
+			prevEl: ".reviews-main__prev"
 		},
-	},
-});
+		pagination: {
+			el: ".swiper-pagination-reviews-main",
+			clickable: true
+		},
+		breakpoints: {
+			767: {
+				spaceBetween: 16
+			},
+		},
+	});
 	var mySwiper45 = new Swiper(".product-card .js-container-upsale", {
 		// Optional parameters
 		// slidesPerGroup: 1,
@@ -1424,12 +1424,12 @@ var mySwiper34 = new Swiper(".js-reviews-main .swiper-container", {
 		}
 	});
 	$(".js-about-brand__button").click(function () {
-		if ($(this).parent().hasClass("active") == false) {
+		if ($(this).parent().parent().hasClass("active") == false) {
 			$(this).text('Свернуть');
-			$('article.about-brand').addClass("active");
+			$(this).parent().parent().addClass("active");
 
 		} else {
-			$('article.about-brand').removeClass("active");
+			$(this).parent().parent().removeClass("active");
 			$(this).text("Читать подробнее");
 		}
 	});
@@ -2380,23 +2380,23 @@ $(window).on('load', function () {
 			}
 
 		})();
-		(function () {
-			let moreText = document.querySelector('.js-reviews-main .swiper-container');
-			if (moreText) {
-				console.log('есть');
-				let button = document.createElement('div');
-				let openText = 'Читать подробнее',
-					closeText = 'Свернуть';
-				moreText.append(button);
-				button.classList.add('js-switch', 'reviews-main__switch');
-				button.innerHTML = openText
-				button.onclick = function () {
-					this.parentElement.classList.toggle('active');
-					button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
-				};
-			}
+		// (function () {
+		// 	let moreText = document.querySelector('.js-reviews-main .swiper-container');
+		// 	if (moreText) {
+		// 		console.log('есть');
+		// 		let button = document.createElement('div');
+		// 		let openText = 'Читать подробнее',
+		// 			closeText = 'Свернуть';
+		// 		moreText.append(button);
+		// 		button.classList.add('js-switch', 'reviews-main__switch');
+		// 		button.innerHTML = openText
+		// 		button.onclick = function () {
+		// 			this.parentElement.classList.toggle('active');
+		// 			button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
+		// 		};
+		// 	}
 
-		})();
+		// })();
 	}
 
 

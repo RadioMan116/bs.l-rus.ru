@@ -341,13 +341,13 @@
 
 @media screen and (max-width: 480px) {
 
-	.new-items.special-offers+.articles,
-	.articles .swiper-container {
-		.articles__items {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
+	// .new-items.special-offers+.articles,
+	// .articles .swiper-container {
+	// 	.articles__items {
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		flex-wrap: nowrap;
 
-		}
-	}
+	// 	}
+	// }
 }
