@@ -456,8 +456,8 @@
 
 
 		&__items {
-			// padding: 16px;
-			padding: 16px 0;
+			padding: 16px;
+			// padding: 16px 0;
 			max-width: 100%;
 			margin: 0;
 			position: relative;
@@ -531,6 +531,8 @@
 				top: 0;
 				left: 0;
 				// right: 0;
+				width: calc(100% + 50px);
+				object-fit: cover;
 			}
 		}
 
