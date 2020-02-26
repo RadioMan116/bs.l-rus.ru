@@ -406,19 +406,19 @@
 	&__simile {
 		background: url("../images/compare-ya.svg") no-repeat;
 		background-position: top center;
-		width: 20px;
-		height: 20px;
+		width: 24px;
+		height: 24px;
 		color: transparent;
 		overflow: hidden;
 		margin-left: 16px;
 		margin-right: auto;
-		background-size: 20px;
+		background-size: 24px;
 
 		&.active {
 			background: url("../images/compare-ya-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
-			background-size: 20px;
+			background-size: 24px;
 		}
 	}
 
@@ -427,18 +427,18 @@
 		background-position: top center;
 		background-size: contain;
 		order: -1;
-		background-size: 20px;
+		background-size: 24px;
 
 
 		&.active {
 			background: url("../images/Favorite-yandex-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
-			background-size: 20px;
+			background-size: 24px;
 		}
 
-		width: 20px;
-		height: 20px;
+		width: 24px;
+		height: 24px;
 	}
 
 	.stock {
@@ -549,7 +549,7 @@
 		margin-bottom: 2rem;
 		display: flex;
 		flex-wrap: wrap;
-		// border-bottom: 1px solid #eeeeee;
+		border-top: 1px solid #eeeeee;
 
 		&__title {
 			color: #262626;
@@ -1228,7 +1228,7 @@
 			height: 34px;
 
 			&:hover {
-				background: url("../images/swiper-button-color-prev.svg") 0/34px no-repeat;
+				background: url("../images/swiper-button-color2-prev.svg") 0/34px no-repeat;
 			}
 		}
 
@@ -1240,7 +1240,7 @@
 			height: 34px;
 
 			&:hover {
-				background: url("../images/swiper-button-color-next.svg") 0/34px no-repeat;
+				background: url("../images/swiper-button-color2-next.svg") 0/34px no-repeat;
 			}
 		}
 	}
@@ -1294,7 +1294,7 @@
 		// .all-video__link
 
 		&__more {
-			color: #333333;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1306,7 +1306,7 @@
 			width: 97px;
 			height: 36px;
 			border-radius: 3px;
-			border: 1px solid #666666;
+			border: 1px solid $base;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -1491,13 +1491,13 @@
 				text-transform: uppercase;
 
 				span {
-					color: #333333;
-					font-family: "Roboto Condensed";
-					font-size: 14px;
-					font-weight: 400;
-					line-height: 20px;
-					width: calc(100% - 10px);
-					text-transform: none;
+					// color: $base;
+					// font-family: "Roboto Condensed";
+					// font-size: 14px;
+					// font-weight: 400;
+					// line-height: 20px;
+					// width: calc(100% - 10px);
+					// text-transform: none;
 				}
 			}
 		}
@@ -1590,7 +1590,7 @@
 					text-transform: uppercase;
 
 					span {
-						color: #333333;
+						color: $base;
 						font-family: "Roboto Condensed";
 						font-size: 13px;
 						font-weight: 400;
@@ -1661,7 +1661,7 @@
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
-				background-color: rgba(57, 72, 145, 0.7984561);
+				background: #212c89e0;
 
 
 				.advantages__link {
@@ -1865,7 +1865,7 @@
 				height: 34px;
 
 				&:hover {
-					background: url("../images/swiper-button-color-next.svg") 0/34px no-repeat;
+					background: url("../images/swiper-button-color2-next.svg") 0/34px no-repeat;
 				}
 			}
 
@@ -1879,7 +1879,7 @@
 				height: 34px;
 
 				&:hover {
-					background: url("../images/swiper-button-color-prev.svg") 0/34px no-repeat;
+					background: url("../images/swiper-button-color2-prev.svg") 0/34px no-repeat;
 				}
 			}
 
@@ -2010,7 +2010,7 @@
 			}
 
 			.special-offers__sale {
-				align-items: baseline;
+				align-items: center;
 				flex-grow: 0;
 				margin-top: 0;
 				margin-bottom: 8px;
@@ -2519,12 +2519,19 @@
 				top: unset;
 				right: unset;
 				bottom: 0;
+				transform: translateX(-50%);
+				left: 50%;
 			}
 
 			.advantages__slide {
 				display: flex;
 				justify-content: center;
 				align-items: baseline;
+
+				img {
+					width: 100%;
+					object-fit: contain;
+				}
 			}
 		}
 

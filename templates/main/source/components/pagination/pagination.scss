@@ -5,16 +5,19 @@
 	justify-content: center;
 
 	&__prev {
-		margin-right: 33px;
+		margin-right: 8px;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 32px;
+		height: 32px;
+
 
 		&:after {
 			content: '';
-			border-left: 2px solid #666666;
-			border-bottom: 2px solid #666666;
+			border-left: 2px solid #eeeeee;
+			border-bottom: 2px solid #eeeeee;
 			display: block;
 			width: 10px;
 			height: 10px;
@@ -22,10 +25,19 @@
 			transform: rotate(45deg)
 		}
 
+		&.active {
+			&:after {
+				content: '';
+				border-left: 2px solid #666666;
+				border-bottom: 2px solid #666666;
+
+			}
+		}
+
 	}
 
 	&__item {
-		margin-right: 33px;
+		margin-right: 8px;
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -40,24 +52,28 @@
 		align-items: center;
 		text-decoration: none;
 		color: #333333;
+		width: 32px;
+		height: 32px;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 
 		&.pagination__item_state_current {
 			width: 32px;
 			height: 32px;
 			border-radius: 2px;
-			border: 1px solid #394791;
+			// border: 1px solid #394791;
+			background: #f1f1f1;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			color: $base;
 		}
 	}
 
 	&__more {
-		margin-right: 33px;
+		margin-right: 8px;
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -74,11 +90,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 32px;
+		height: 32px;
 
 		&:after {
 			content: '';
-			border-top: 2px solid #666666;
-			border-right: 2px solid #666666;
+			border-top: 2px solid #eeeeee;
+			border-right: 2px solid #eeeeee;
 			display: block;
 			width: 10px;
 			height: 10px;
@@ -86,7 +104,15 @@
 			transform: rotate(45deg)
 		}
 
+		&.active {
+			&:after {
+				border-top: 2px solid #666666;
+				border-right: 2px solid #666666;
+			}
+		}
+
 	}
+
 
 	@media screen and (max-width: 480px) {
 		margin: 15px auto !important;
