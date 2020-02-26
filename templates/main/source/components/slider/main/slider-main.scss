@@ -16,6 +16,8 @@
 	.swiper-container-main {
 		position: relative;
 		overflow: hidden;
+		height: 366px;
+
 	}
 
 	&__items {
@@ -252,7 +254,7 @@
 			width: 550px;
 			display: flex;
 			flex-wrap: wrap;
-			align-items: center;
+			align-items: flex-start;
 			margin-left: 130px;
 			margin-top: 0;
 			border-radius: 3px;
@@ -260,7 +262,8 @@
 			// padding-left: 52px;
 			// padding-top: 24px;
 			// padding-bottom: 32px;
-			padding: 52px;
+			padding: 70px 52px 16px;
+			height: 274px;
 
 			.span {
 
@@ -558,99 +561,3 @@
 	// 	}
 	// }
 }
-
-// @media screen and (max-width: 640px) {
-// 	.gallery {
-
-// 		&__item {
-// 			display: none;
-// 		}
-
-// 		&__tablet {
-// 			padding-right: 0;
-// 			padding-left: 0;
-// 		}
-
-// 		.swiper__item {
-// 			justify-content: center;
-// 			padding-right: 0;
-// 			padding-top: 0;
-// 		}
-
-
-// 		.swiper__title {
-// 			.span {
-// 				&__small {
-// 					font-size: 33px;
-// 				}
-
-// 				&__big {
-// 					font-size: 15px;
-// 				}
-// 			}
-
-// 		}
-
-// 		.swiper-pagination {
-// 			bottom: 16px;
-// 			text-align: center;
-// 			padding-right: 0;
-// 		}
-
-// 	}
-// }
-
-// @media screen and (max-width: 480px) {
-// 	.gallery {
-// 		.swiper__item {
-// 			padding: 0;
-
-// 		}
-
-// 		.gallery__el {
-// 			height: 56px;
-// 			margin-bottom: 8px;
-
-// 			img {
-// 				width: 60px;
-// 				height: 100%;
-// 			}
-
-// 			.gallery__parent {
-// 				padding: 3px;
-// 				width: 100%;
-// 			}
-// 		}
-
-// 		.swiper-slide {}
-
-// 		.swiper__title {
-// 			margin: 0;
-// 		}
-
-// 		.swiper__link {
-// 			max-width: 240px;
-// 		}
-
-
-// 		&__article {
-// 			font-size: 16px;
-// 			font-weight: 400;
-// 			line-height: 28px;
-// 			padding: 0 13px;
-// 		}
-
-
-
-// 		&__items {
-// 			padding: 16px 16px 9px;
-// 		}
-
-// 		&__text {
-// 			font-family: Arial;
-// 			font-size: 14px;
-// 			line-height: 19px;
-// 			padding: 0 13px;
-// 		}
-// 	}
-// }

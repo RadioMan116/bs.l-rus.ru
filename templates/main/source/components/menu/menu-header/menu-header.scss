@@ -144,7 +144,11 @@
 			padding-top: 1em;
 			padding-left: 0px;
 			margin-right: 0;
-
+			color: $base;
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
 
 			&.active {
 				.city-change__popup {
@@ -157,14 +161,11 @@
 
 
 
-			&__title {}
+			&__title {
 
-			color: $base;
-			font-family: Arial;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 22px;
-			text-align: right;
+				// text-align: right;
+			}
+
 
 			&__bullet {}
 

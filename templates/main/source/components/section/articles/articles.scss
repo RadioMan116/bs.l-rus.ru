@@ -28,7 +28,7 @@
 		margin-left: auto;
 		padding: 10px 12px;
 		border-radius: 2px;
-		border: solid 1px #394791;
+		border: solid 1px $base2;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -36,14 +36,14 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: $base;
+		color: $base2;
 		text-transform: uppercase;
 		text-decoration: none !important;
 
-		&:hover {
-			color: #fff;
-			// background: #394791 !important;
-		}
+		// &:hover {
+		// 	color: #fff;
+		// 	// background: #394791 !important;
+		// }
 	}
 
 	&__items {
