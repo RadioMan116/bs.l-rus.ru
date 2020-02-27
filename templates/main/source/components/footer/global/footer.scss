@@ -22,7 +22,7 @@
 	&__col {
 		width: 25%;
 		flex-basis: 220px;
-		flex-grow: 1;
+		// flex-grow: 1;
 
 		.menu-footer__item {
 			width: 85%;
@@ -70,7 +70,7 @@
 			flex-basis: 180px;
 			display: flex;
 			flex-direction: column;
-			flex-basis: 100px;
+			// flex-basis: 100px;
 			padding-top: 12px;
 		}
 	}
