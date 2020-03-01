@@ -195,17 +195,17 @@ $(document).ready(function () {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 1.3,
+						slidesPerView: 2.3,
 						slidesPerGroup: 1,
-						spaceBetween: 16,
+						spaceBetween: 8,
 
 					},
 
 					767: {
 						allowTouchMove: true,
-						slidesPerView: 2,
+						slidesPerView: 3.3,
 						slidesPerGroup: 1,
-						spaceBetween: 24
+						spaceBetween: 14,
 					},
 				},
 				pagination: {
@@ -686,23 +686,10 @@ $(document).ready(function () {
 		// $('.share__items').
 
 	});
-	$(".labels>img").hover(function () {
-		var alt = $(this).attr('alt');
-		var handel = $(this).position().left - 25;
-		console.log(handel)
-		if ($('.labels .labels__popup').length) {
-			if ($('.labels .labels__popup').text() == alt) {
-				$(".labels .labels__popup").remove();
-			} else {
-				$(".labels .labels__popup").remove();
-				$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
-			}
-		} else {
-			$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
-		}
-		$(".labels__popup").css('left', handel);
-	});
 	$(".labels__sale").hover(function () {
+		$(this).toggleClass('active')
+	});
+	$(".labels__item").hover(function () {
 		$(this).toggleClass('active')
 	});
 
@@ -1204,14 +1191,14 @@ $(document).ready(function () {
 			}
 		})();
 
-		// (function () {
-		// 	let productCard = document.querySelector('.product-card');
-		// 	if (productCard) {
-		// 		let favorite = productCard.querySelector('.product-card__social');
-		// 		let productHeaderBottom = productCard.querySelector('.product__header_bottom');
-		// 		productHeaderBottom.append(favorite);
-		// 	}
-		// })();
+		(function () {
+			let productCard = document.querySelector('.product-card');
+			if (productCard) {
+				let favorite = productCard.querySelector('.product-card__social');
+				let productHeaderBottom = productCard.querySelector('.product__header_bottom');
+				productHeaderBottom.append(favorite);
+			}
+		})();
 
 
 	}
@@ -1336,10 +1323,10 @@ $(document).ready(function () {
 		var container = $(".js-header__search");
 		if (!container.is(e.target) && container.has(e.target).length === 0) {
 			//проверяем, чтобы клик был не на блоке и не на потомках блока
-		$(".header .search__popup").removeClass("search__popup-open");
-		$(".header__search").removeClass("header__search-open");
-		$(".header__overlay").removeClass("header__overlay-open");
-		$("html").removeClass("fixed");
+			$(".header .search__popup").removeClass("search__popup-open");
+			$(".header__search").removeClass("header__search-open");
+			$(".header__overlay").removeClass("header__overlay-open");
+			$("html").removeClass("fixed");
 		}
 	});
 
