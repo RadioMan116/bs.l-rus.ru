@@ -2158,7 +2158,7 @@ $(window).on('load', function () {
 			},
 		});
 		var galleryTop = new Swiper('.js-gallery-top', {
-			spaceBetween: 0,
+			spaceBetween: 24,
 			// navigation: {
 			// 	nextEl: '.swiper-button-next',
 			// 	prevEl: '.swiper-button-prev',
