@@ -383,7 +383,7 @@ $(document).ready(function () {
 		// slidesPerGroup: 1,
 		slidesPerView: 1,
 		slidesPerColumn: 2,
-		spaceBetween: 24,
+		spaceBetween: 25,
 		allowTouchMove: false,
 		// direction: "horizontal",
 		// loop: true,
