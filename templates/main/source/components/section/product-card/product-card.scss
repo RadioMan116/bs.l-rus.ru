@@ -4667,25 +4667,28 @@
 					}
 
 					&:after {
-						// content: 'Увеличить';
-						// color: #cccccc;
-						// font-family: "Roboto Condensed";
-						// font-size: 12px;
-						// font-weight: 400;
-						// width: 96px;
-						// height: 32px;
-						// position: absolute;
-						// right: 50px;
-						// top: 0px;
-						// display: flex;
-						// align-items: center;
-						// justify-content: flex-start;
-						// background-image: url('../images/data-fancybox.svg');
-						// background-position-x: 0;
-						// height: 32px;
-						// position: absolute;
-						// right: 19px;
-						// top: 14px;
+						content: 'Увеличить';
+						color: #cccccc;
+						font-family: "Roboto Condensed";
+						font-size: 12px;
+						font-weight: 400;
+						width: 96px;
+						height: 32px;
+						position: absolute;
+						right: 50px;
+						top: 0px;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						background-image: url('../images/data-fancybox.svg');
+						background-position-x: 0;
+						height: 32px;
+						position: absolute;
+						right: 19px;
+						top: 14px;
+					}
+
+					picture:after {
 						display: none;
 					}
 				}
