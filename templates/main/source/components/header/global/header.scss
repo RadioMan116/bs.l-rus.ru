@@ -280,12 +280,12 @@
 
 		margin-right: 36px;
 
-		// &:hover {
+		&:hover {
 
-		// 	&:before {
-		// 		background: url("../images/header-fav-active.svg") no-repeat;
-		// 	}
-		// }
+			&:before {
+				background: url("../images/header-fav-active.svg") no-repeat;
+			}
+		}
 
 		&.active {
 			position: relative;
@@ -299,12 +299,12 @@
 
 		margin-right: 36px;
 
-		// &:hover {
+		&:hover {
 
-		// 	&:before {
-		// 		background: url("../images/header-compare-active.svg") no-repeat;
-		// 	}
-		// }
+			&:before {
+				background: url("../images/header-compare-active.svg") no-repeat;
+			}
+		}
 
 		&.active {
 			position: relative;
@@ -319,12 +319,12 @@
 		margin-right: 5px;
 
 		// &-open,
-		// &:hover {
+		&:hover {
 
-		// 	&:before {
-		// 		background: url("../images/shopping-cart__color.svg") no-repeat;
-		// 	}
-		// }
+			&:before {
+				background: url("../images/shopping-cart__color.svg") no-repeat;
+			}
+		}
 	}
 
 	&__number {
