@@ -183,8 +183,8 @@
 		&:hover {
 			overflow: unset;
 
-			.comparison__item {
-				display: flex;
+			.comparison__item a {
+				display: block;
 			}
 		}
 
@@ -210,7 +210,8 @@
 		display: flex;
 		flex: 1 0 100%;
 		margin: 0 -1px;
-		display: none;
+
+		// display: none;
 
 
 		&.active {
@@ -240,9 +241,11 @@
 		line-height: 25px;
 		position: relative;
 		text-decoration: none !important;
+		display: none;
 
 		&.active {
 			pointer-events: none;
+			display: block;
 		}
 	}
 
