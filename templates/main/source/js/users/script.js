@@ -2090,7 +2090,22 @@ $(document).ready(function () {
 		$(".content-top").addClass("content-top__tags");
 	}
 
-
+	if ($('.comparison')) {
+		$('.js-compare_block-change.active').parent().addClass('order');
+		if ($('.comparison__link')) {
+			$('.comparison__list').each(function () {
+				let category = $(this).find('.comparison__link');
+				if (category.hasClass('active')) {
+					$(this).parent().addClass('order');
+				} else {
+					$('.comparison__list .comparison__item:eq(0)').addClass('order');
+				}
+			})
+			// if (select.hasClass('active')) {
+			// 	console.log('1')
+			// }
+		}
+	}
 
 
 });
@@ -2244,20 +2259,6 @@ $(window).on('load', function () {
 		})
 	}
 	if ($(".comparison").length) {
-		$('.js-compare_block-change.active').parent().addClass('order');
-		if ($('.comparison__link')) {
-			$('.comparison__list').each(function () {
-				let category = $(this).find('.comparison__link');
-				if (category.hasClass('active')) {
-					$(this).parent().addClass('order');
-				} else {
-					$('.comparison__list .comparison__item:eq(0)').addClass('order');
-				}
-			})
-			// if (select.hasClass('active')) {
-			// 	console.log('1')
-			// }
-		}
 		// 	// if (select.hasClass('active')) {
 		// 	// 	console.log('1')
 		// 	// }

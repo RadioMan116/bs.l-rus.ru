@@ -106,7 +106,7 @@
 			position: absolute;
 			width: 27px;
 			right: -27px;
-			background: white;
+			background: inherit;
 			border: inherit;
 			height: 102%;
 			top: 0;
@@ -914,7 +914,7 @@
 		}
 
 		.swiper-slide {
-			flex: 1 0 auto;
+			flex: 0 0 auto;
 			padding-left: 28px;
 
 			// &:nth-child(1) {
