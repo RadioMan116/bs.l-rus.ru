@@ -2092,8 +2092,8 @@ $(document).ready(function () {
 
 	if ($('.comparison')) {
 		$('.js-compare_block-change.active').parent().addClass('order');
-		let categoryHeight = document.querySelector('.comparison__link.js-compare_block-change.active').parentNode.offsetHeight;
-		document.querySelector('.comparison__list').style.height = `${categoryHeight}px`;
+
+
 		if ($('.comparison__link')) {
 			$('.comparison__list').each(function () {
 				let category = $(this).find('.comparison__link');
@@ -2101,6 +2101,8 @@ $(document).ready(function () {
 				console.log(categoryHeight);
 				if (category.hasClass('active')) {
 					$(this).parent().addClass('order');
+					let categoryHeight = document.querySelector('.comparison__link.js-compare_block-change.active').parentNode.offsetHeight;
+					document.querySelector('.comparison__list').style.height = `${categoryHeight}px`;
 				} else {
 					$('.comparison__list .comparison__item:eq(0)').addClass('order');
 				}
