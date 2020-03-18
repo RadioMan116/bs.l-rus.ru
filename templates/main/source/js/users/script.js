@@ -1539,6 +1539,7 @@ $(document).ready(function () {
 				e.preventDefault();
 			});
 			$('.js-compare_block-change.active').parent().addClass('order');
+			$('.comparison__list').height($('.js-compare_block-change.active').innerHeight())
 			window.onload = function () {
 				// $('.comparison__main .characteristic__row').each(function (index, el) {
 				// 	var height = $('.swiper-container-comparison .characteristic__row').eq(index).height();
