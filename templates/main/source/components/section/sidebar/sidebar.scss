@@ -510,6 +510,15 @@
 
 }
 
+@media screen and (min-width: 768px) {
+	.content-top[data-bg-custom]+.content .col-md-3 {
+		.sidebar {
+			padding-bottom: 400px;
+		}
+	}
+}
+
+
 * {
 	transition: 0.4s;
 }
