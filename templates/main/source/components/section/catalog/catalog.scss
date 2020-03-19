@@ -1142,7 +1142,7 @@
 		// .advantages__title
 
 		&__title {
-			color: $base;
+			color: #394791;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -1173,11 +1173,19 @@
 
 		}
 
+		&__label {
+			position: absolute;
+			width: 74px;
+			height: 74px;
+			top: 14px;
+			right: 14px;
+		}
+
 		// .advantages__item
 
 		&__item {
 			position: absolute;
-			background-color: $base;
+			background-color: #394791;
 			width: 100%;
 			bottom: 0;
 			padding: 18px;
@@ -1205,7 +1213,8 @@
 			// text-decoration: underline;
 		}
 
-		.swiper-pagination-advantages {
+		.swiper-pagination-advantages,
+		.swiper-pagination-advantages-low {
 			top: 9px;
 			right: 124px;
 			display: flex;
@@ -1214,13 +1223,14 @@
 			position: absolute;
 		}
 
-		// .swiper-pagination-bullet {
-		// 	margin-left: 16px;
-		// }
+		.swiper-pagination-bullet {
+			margin-left: 16px;
+		}
 
 
-		.advantages__prev {
-			background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
+		.advantages__prev,
+		.advantages-low__prev {
+			background: url("../images/special-offers_prev.png") 0/34px no-repeat;
 			position: absolute;
 			top: 16px;
 			right: 48px;
@@ -1229,19 +1239,20 @@
 			height: 34px;
 
 			&:hover {
-				background: url("../images/swiper-button-color-prev.svg") 0/34px no-repeat;
+				background: url("../images/swiper-button-color-prev.png") 0/34px no-repeat;
 			}
 		}
 
-		.advantages__next {
-			background: url("../images/special-offers_next.svg") 0/34px no-repeat;
+		.advantages__next,
+		.advantages-low__next {
+			background: url("../images/special-offers_next.png") 0/34px no-repeat;
 			top: 16px;
 			right: 3px;
 			width: 34px;
 			height: 34px;
 
 			&:hover {
-				background: url("../images/swiper-button-color-next.svg") 0/34px no-repeat;
+				background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
 			}
 		}
 	}
