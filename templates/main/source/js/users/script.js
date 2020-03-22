@@ -501,9 +501,11 @@ $(document).ready(function () {
 			if ($(".advantages .swiper-slide").length > 3) {
 				$('.advantages__prev').show();
 				$('.advantages__next').show();
+				$('.swiper-pagination-advantages').show();
 			} else {
 				$('.advantages__prev').hide();
 				$('.advantages__next').hide();
+				$('.swiper-pagination-advantages').hide();
 			}
 		} else {
 			var mySwiper20 = new Swiper(".catalog .advantages__container", {
@@ -544,9 +546,11 @@ $(document).ready(function () {
 			if ($(".advantages .swiper-slide").length > 6) {
 				$('.advantages__prev').show();
 				$('.advantages__next').show();
+				$('.swiper-pagination-advantages').show();
 			} else {
 				$('.advantages__prev').hide();
 				$('.advantages__next').hide();
+				$('.swiper-pagination-advantages').hide();
 			}
 		}
 
