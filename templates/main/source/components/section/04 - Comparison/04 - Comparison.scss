@@ -973,10 +973,10 @@
 				&__rub {}
 
 				&__buy {
-
 					padding: 0;
 					color: transparent;
 					// background-image: url(/mockup/templates/main/build/css/../images/shopping-cart.svg);
+					background-image: url(../images/shopping-cart-new.svg);
 					background-size: auto;
 					background-position: 50%;
 					width: 40px;
@@ -984,7 +984,7 @@
 					border-radius: 3px;
 					font-family: Roboto Condensed;
 					font-size: 14px;
-					background-color: $base;
+					background-color: $base2;
 					background-repeat: no-repeat;
 					-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
 					box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
@@ -1001,12 +1001,13 @@
 					text-align: center;
 
 					&:before {
-						content: "";
-						background-image: url(../images/shopping-cart.png);
-						width: 16px;
-						height: 16px;
-						background-size: 16px;
-						margin-right: 0;
+						// content: "";
+						// background-image: url(../images/shopping-cart-new.svg);
+						// width: 16px;
+						// height: 16px;
+						// background-size: 16px;
+						// margin-right: 0;
+						display: none;
 					}
 				}
 			}
