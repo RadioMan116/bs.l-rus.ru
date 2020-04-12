@@ -1551,7 +1551,7 @@
 
 				&:hover {
 					overflow: visible;
-					height: fit-content !important;
+					height: fit-content;
 					max-height: 1000px;
 					min-height: calc(100% - 22px);
 
@@ -3045,6 +3045,11 @@
 
 			&__item {
 				flex-basis: auto;
+				height: auto !important;
+
+				// &:hover {
+				// 	height: auto !important;
+				// }
 			}
 
 			// .instructions__all
@@ -3080,6 +3085,10 @@
 
 
 					span {}
+
+					&:nth-child(n+6) {
+						display: flex !important;
+					}
 				}
 			}
 
