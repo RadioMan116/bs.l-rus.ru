@@ -1074,7 +1074,7 @@ $(document).ready(function () {
 			// $('.instructions .instructions__item').matchHeight();
 			let height = $('.instructions .instructions__item').height();
 
-			$('.instructions .instructions__items').height(height + 80);
+			$('.instructions .instructions__items').height(height + 50);
 		});
 	}
 	if (windowWidth2 <= 767) {
