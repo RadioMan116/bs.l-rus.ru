@@ -2603,6 +2603,7 @@
 		margin-bottom: 12px;
 		// .description__title
 
+
 		&__title {
 			color: #262626;
 			font-family: "Roboto Condensed";
@@ -2612,6 +2613,17 @@
 			padding: 25px 0 20px;
 			text-align: left;
 			margin-bottom: 0;
+		}
+
+		div {
+			width: 100%;
+			color: #333;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 22px;
+			text-align: left;
+			z-index: 99;
+			margin: 6px 0 15px;
 		}
 	}
 
