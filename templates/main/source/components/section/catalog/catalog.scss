@@ -1532,6 +1532,7 @@
 				width: calc(25% - 12px);
 				padding: 18px 11px 9px;
 				flex-grow: 0;
+				background: #fff;
 
 				&:nth-child(3n-1) {
 					margin: 0 16px 20px 0;
@@ -1542,6 +1543,31 @@
 
 				&:last-child {
 					margin-right: 0;
+				}
+
+				pre {
+					display: none;
+				}
+
+				&:hover {
+					overflow: visible;
+					height: fit-content !important;
+					max-height: 1000px;
+					min-height: calc(100% - 22px);
+
+					.doc {
+						// .doc_loading
+
+						&_loading {
+
+
+
+							&:nth-child(n+6) {
+								display: flex;
+							}
+						}
+					}
+
 				}
 
 			}
@@ -1618,6 +1644,10 @@
 						margin-left: -39px;
 						width: 31px;
 						background: url("../images/documentation__pic.svg") no-repeat 100% 1px;
+					}
+
+					&:nth-child(n+6) {
+						display: none;
 					}
 				}
 			}

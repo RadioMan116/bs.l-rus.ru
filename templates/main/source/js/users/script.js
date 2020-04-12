@@ -1061,6 +1061,13 @@ $(document).ready(function () {
 		// 		$(".header__overlay").removeClass("header__overlay-open");
 		// 	}
 		// });
+		$(function () {
+			$('.instructions .catalog__text').matchHeight();
+			// $('.instructions .instructions__item').matchHeight();
+			let height = $('.instructions .instructions__item').height();
+
+			$('.instructions .instructions__items').height(height + 80);
+		});
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
