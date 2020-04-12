@@ -360,6 +360,10 @@
 		margin-bottom: 28px;
 		max-width: 100%;
 
+		.swiper-container-main {
+			height: auto;
+		}
+
 		.swiper-slide {
 			flex-direction: column;
 			align-content: baseline;
