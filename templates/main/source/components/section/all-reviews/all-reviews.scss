@@ -70,11 +70,13 @@
 
 	.reviews__section {
 
+
 		.ratings:first-of-type {
 			display: flex;
 			flex-wrap: wrap;
 			width: 250px;
 			height: 100%;
+			align-items: center;
 
 			.reviews__all {
 				margin-left: 17px;
@@ -104,10 +106,11 @@
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 700;
-			line-height: 1;
+			// line-height: 1;
 			margin-left: 8px;
-			display: flex;
-			align-items: center;
+			// display: flex;
+			// align-items: center;
+			// margin-bottom: 2px;
 		}
 
 		.all-reviews__link {
@@ -115,7 +118,7 @@
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			border-bottom: 1px dashed $base;
-			line-height: 1;
+			// line-height: 1;
 			margin-right: 16px;
 			text-decoration: none !important;
 
@@ -187,7 +190,7 @@
 	}
 
 	.reviews__section {
-		align-items: baseline;
+		align-items: center;
 		padding-bottom: 26px;
 		border-bottom: 1px solid #eeeeee;
 	}
@@ -714,7 +717,7 @@
 		&__none {
 			background: url("../images/rectangle-2.svg") no-repeat;
 			background-position: center;
-			background-size: 21px 20px;
+			background-size: 18px;
 		}
 	}
 
