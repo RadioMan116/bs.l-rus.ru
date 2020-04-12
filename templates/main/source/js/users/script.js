@@ -1045,14 +1045,14 @@ $(document).ready(function () {
 		}
 		this.remove();
 	});
-	(() => {
-		let PRE = document.querySelectorAll('.catalog__item.instructions__item.swiper-slide pre');
+	// (() => {
+	// 	let PRE = document.querySelectorAll('.catalog__item.instructions__item.swiper-slide pre');
 
-		if (PRE.length > 0) {
+	// 	if (PRE.length > 0) {
 
-			PRE.forEach(el => el.remove())
-		}
-	})();
+	// 		PRE.forEach(el => el.remove())
+	// 	}
+	// })();
 	if (windowWidth2 > 767) {
 
 		if ($('h1.title:contains("Корзина")')) {
