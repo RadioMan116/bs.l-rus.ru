@@ -155,7 +155,7 @@
 		.category__item {
 			// background-position: calc(100%) top;
 			background-position: calc(100% + 30px) center !important;
-			background-size: 173px !important;
+			background-size: contain !important;
 			padding: 23px 99px 19px 16px !important;
 			height: auto;
 			justify-content: space-between;
