@@ -1554,12 +1554,12 @@ $(document).ready(function () {
 		}
 	});
 	$(".js-about-brand__button").click(function () {
-		if ($(this).parent().parent().hasClass("active") == false) {
+		if ($(this).parent().hasClass("active") == false) {
 			$(this).text('Свернуть');
-			$(this).parent().parent().addClass("active");
+			$(this).parent().addClass("active");
 
 		} else {
-			$(this).parent().parent().removeClass("active");
+			$(this).parent().removeClass("active");
 			$(this).text("Читать подробнее");
 		}
 	});
