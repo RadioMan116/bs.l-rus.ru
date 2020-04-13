@@ -5,6 +5,10 @@
 	// .about-brand__title
 	font-family: Arial, sans-serif;
 
+	* {
+		transition: 0s;
+	}
+
 	&__title,
 	.about-brand__title {
 		color: #262626;
