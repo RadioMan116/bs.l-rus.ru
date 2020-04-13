@@ -510,8 +510,8 @@
 		flex-grow: 1;
 		border-bottom: 1px solid transparent;
 		width: 100%;
-		padding: 6px 0 13px;
-		height: 45px;
+		padding: 13px 0 13px;
+		height: 55px;
 
 
 		* {
@@ -662,7 +662,7 @@
 			}
 
 			&.filter__close {
-				height: 45px;
+				height: 55px;
 
 				.filter__checkbox {
 					display: none;
