@@ -1509,8 +1509,6 @@
 			right: 0;
 		}
 
-
-
 		.special-offers__buy {
 			background-image: none;
 			@include button;
@@ -1663,7 +1661,7 @@
 			list-style: none;
 			padding: 0;
 			height: 25px;
-			max-height: 50px;
+			// max-height: 50px;
 			max-height: 30px;
 			margin: 0px 0 18px;
 			// background: white;
@@ -1683,7 +1681,7 @@
 
 				.comparison__item {
 					display: flex;
-					min-height: 24px;
+					min-height: 31px;
 					flex: 1 0 100%;
 				}
 
@@ -1716,6 +1714,7 @@
 			margin: 0 -1px;
 			flex: 1 0 auto;
 			// display: none;
+			min-height: 31px;
 
 
 
