@@ -1122,7 +1122,7 @@
 
 
 				&-list {
-
+					justify-content: space-between;
 					// align-items: flex-start;
 				}
 
@@ -1139,9 +1139,9 @@
 					height: auto;
 					min-height: 142px;
 
-					&:nth-last-of-type(odd) {
-						margin-left: 16px;
-					}
+					// &:nth-of-type(odd) {
+					// 	margin-left: 16px;
+					// }
 
 					// &:nth-last-of-type(-n+2) {
 					// 	margin-bottom: 0px;
