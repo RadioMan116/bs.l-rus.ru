@@ -39,6 +39,10 @@
 
 		label {
 			cursor: pointer;
+
+			* {
+				transition: 0s;
+			}
 		}
 
 		form {
@@ -83,6 +87,31 @@
 				right: 10px;
 				top: 4px;
 				color: #999999;
+			}
+
+			&-close {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				width: 30px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 2;
+				// color: #999999;
+			}
+
+			&:hover+.checkbox-custom+.checkbox-close {
+				color: #ffffff;
+				background: $base !important;
+				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+			}
+
+			&:checked+.checkbox-custom+.checkbox-close {
+				color: #ffffff;
+				background: #d82300;
+				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
 			/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
@@ -705,7 +734,9 @@
 			flex-grow: 1;
 			flex-wrap: wrap;
 
-
+			label {
+				min-width: calc(35%-12px)
+			}
 		}
 
 		&__button {
