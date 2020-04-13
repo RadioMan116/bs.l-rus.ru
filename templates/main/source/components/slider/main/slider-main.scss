@@ -165,6 +165,7 @@
 		display: flex;
 		background-color: #ffffff;
 		height: auto;
+		flex-basis: calc(25% - 21.5px);
 
 		.gallery__parent {
 			display: flex;
