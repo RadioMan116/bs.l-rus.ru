@@ -1718,7 +1718,7 @@
 			margin: 0 -1px;
 			flex: 1 0 auto;
 			// display: none;
-			min-height: 31px;
+
 
 
 
@@ -1732,7 +1732,9 @@
 				background: transparent;
 				border-top: 0;
 				border-bottom: 0;
+				// border-bottom: solid 1px #d6d6d6;
 				display: flex;
+				min-height: 31px;
 
 				.comparison__link {
 					pointer-events: none;
