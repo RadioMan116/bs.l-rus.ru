@@ -315,6 +315,10 @@
 					margin-right: -17px;
 				}
 
+				.dropdown-menu__list {
+					// overflow: unset;
+					max-height: unset;
+				}
 
 				.dropdown-menu__title {
 					box-shadow: none !important;
