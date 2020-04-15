@@ -5147,7 +5147,7 @@
 					margin-top: 18px !important;
 					align-items: flex-start;
 					min-height: 110px;
-					max-width: 100%;
+					max-width: calc(100% - 32px);
 				}
 
 				&__aside {
