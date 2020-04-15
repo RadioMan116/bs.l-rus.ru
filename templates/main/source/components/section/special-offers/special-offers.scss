@@ -159,15 +159,14 @@
 
 		.price__absolute {
 			position: absolute;
-			color: #b0b0b0;
-
-			font-size: 12px;
-			font-weight: 500;
-			line-height: 24px;
-			// text-decoration: line-through;
+			color: #999;
+			font-family: Roboto Condensed;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1;
 			left: 0;
-			top: -20px;
-			white-space: nowrap;
+			top: unset;
+			bottom: 0;
 
 			&:before {
 				content: "";
@@ -179,6 +178,7 @@
 				bottom: 6px;
 			}
 		}
+
 	}
 
 	&__rub {
