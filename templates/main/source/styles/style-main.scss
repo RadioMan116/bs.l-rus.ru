@@ -17,10 +17,7 @@ img {
 	max-height: 100%;
 }
 
-.fixed {
-	// overflow: hidden;
-	// width:calc(100% - 17px);
-}
+
 
 .swiper-container,
 .swiper-container-three,
@@ -281,6 +278,10 @@ picture {
 		}
 	}
 
+	.fixed {
+		overflow: hidden;
+		// width:calc(100% - 17px);
+	}
 
 	.col-md-3 {
 		padding-right: 0;
