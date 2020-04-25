@@ -1076,6 +1076,10 @@ $(document).ready(function () {
 
 			$('.instructions .instructions__items').height(height + 50);
 		});
+		$(function () {
+			$('.articles-main__slider .catalog__text').matchHeight();
+			$('.articles-main__slider  .catalog__specification').matchHeight();
+		});
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');

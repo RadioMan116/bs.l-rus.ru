@@ -209,6 +209,10 @@
 				top: 68px;
 			}
 
+			.catalog__prop {
+				flex-grow: 0;
+			}
+
 			.catalog__item {
 				height: auto;
 				max-width: unset;
