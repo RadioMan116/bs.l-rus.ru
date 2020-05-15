@@ -12,7 +12,12 @@
 		margin-bottom: 39px;
 		height: 100%;
 
-
+		&:hover {
+			.all-video__link {
+				color: $base;
+				cursor: pointer;
+			}
+		}
 
 		&:nth-child(3n-1) {
 			margin: 0 28px 39px;
@@ -59,17 +64,10 @@
 		}
 
 		&:hover {
-			// .all-video__link {
-			// 	color: $base;
-			// 	cursor: pointer;
-			// }
-
 			img {
 				transform: scale(1.1);
 			}
 		}
-
-		&:hover {}
 
 		img+iframe~:after {
 			display: none;
