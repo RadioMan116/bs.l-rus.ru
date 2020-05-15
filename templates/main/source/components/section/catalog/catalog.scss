@@ -1279,6 +1279,7 @@
 		&__items {
 			display: flex;
 			height: auto;
+			overflow-x: auto;
 		}
 
 		.swiper-pagination-all-video {
@@ -1296,7 +1297,7 @@
 				margin: 0 0 39px;
 			}
 
-			&:nth-of-type(3n-1) {
+			&:nth-of-type(even) {
 				margin: 0 28px 39px;
 			}
 
