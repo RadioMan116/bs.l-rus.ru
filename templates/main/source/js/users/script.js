@@ -1088,6 +1088,10 @@ $(document).ready(function () {
 		$('.sidebar-right').appendTo('.product-card');
 		$('.reviews__main-link').appendTo('.product-card .reviews');
 		$(".col-md-3 .js-container-upsale").remove();
+		if (!$(".special-offers.catalog .sidebar").length) {
+			console.log('юк');
+			$('.sidebar').appendTo($('.special-offers.catalog'));
+		}
 		var mySwiper4 = new Swiper(".special-offers.catalog .js-container-upsale", {
 			// Optional parameters
 			// slidesPerGroup: 1,
@@ -1261,6 +1265,7 @@ $(document).ready(function () {
 				productHeaderBottom.append(favorite);
 			}
 		})();
+
 
 
 	}
@@ -2526,6 +2531,15 @@ $(window).on('load', function () {
 				};
 			}
 
+		})();
+
+		(() => {
+			let brandContent = document.querySelector('.catalog__description');
+			if (brandContent) {
+				if (brandContent.querySelector('.description__text') === null) {
+					brandContent.querySelector('.js-switch.description__switch').style.display = 'none';
+				}
+			}
 		})();
 		// (function () {
 		// 	let moreText = document.querySelector('.js-reviews-main .swiper-container');

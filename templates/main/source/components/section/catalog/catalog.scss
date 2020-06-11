@@ -2868,6 +2868,10 @@
 		.sidebar {
 			display: flex;
 			margin-bottom: 44px;
+
+			& + .sidebar {
+				display: none;
+			}
 		}
 
 		.marking {
