@@ -1071,6 +1071,7 @@ $(document).ready(function () {
 		// });
 		$(function () {
 			$('.instructions .catalog__text').matchHeight();
+			$('.catalog__specification').matchHeight();
 			// $('.instructions .instructions__item').matchHeight();
 			let height = $('.instructions .instructions__item').height();
 
