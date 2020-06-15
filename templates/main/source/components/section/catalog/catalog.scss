@@ -2580,8 +2580,15 @@
 				align-items: baseline;
 
 				img {
-					width: unset;
 					object-fit: contain;
+
+					&:first-child {
+						width: 100%;
+					}
+
+					&:nth-child(2) {
+						width: unset;
+					}
 				}
 			}
 		}
