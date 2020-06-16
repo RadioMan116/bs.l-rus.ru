@@ -1633,13 +1633,13 @@ $(document).ready(function () {
 						'margin-top': ($(".thead__comparison").height() - 10 + 'px')
 					});
 					$(".comparison .js-swiper-pagination").css({
-						'top': ($(".thead__comparison").height() + 29 + 'px')
+						'top': ($(".thead__comparison").height() - 47 + 'px')
 					});
 					$(".comparison .js-swiper-prev").css({
-						'top': ($(".thead__comparison").height() + 48 + 'px')
+						'top': ($(".thead__comparison").height() - 28 + 'px')
 					});
 					$(".comparison .js-swiper-next").css({
-						'top': ($(".thead__comparison").height() + 48 + 'px')
+						'top': ($(".thead__comparison").height() - 28 + 'px')
 					});
 					$('.comparison__main .characteristic__row').each(function (index, el) {
 						if ($(this).text().length > 60) {
@@ -2354,13 +2354,13 @@ $(window).on('load', function () {
 				'margin-top': ($(".thead__comparison").height() - 10 + 'px')
 			});
 			$(".comparison .js-swiper-pagination").css({
-				'top': ($(".thead__comparison").height() + 29 + 'px')
+				'top': ($(".thead__comparison").height() - 47 + 'px')
 			});
 			$(".comparison .js-swiper-prev").css({
-				'top': ($(".thead__comparison").height() + 48 + 'px')
+				'top': ($(".thead__comparison").height() - 28 + 'px')
 			});
 			$(".comparison .js-swiper-next").css({
-				'top': ($(".thead__comparison").height() + 48 + 'px')
+				'top': ($(".thead__comparison").height() - 28 + 'px')
 			});
 			$('.comparison__main .characteristic__row').each(function (index, el) {
 				if ($(this).text().length > 50) {
