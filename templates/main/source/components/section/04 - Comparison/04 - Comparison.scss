@@ -243,6 +243,7 @@
 			border-top: 0;
 			border-bottom: 0;
 			display: flex;
+			min-height: 25px;
 
 			.comparison__link {
 				pointer-events: none;
