@@ -430,6 +430,7 @@
 		background-size: contain;
 		order: -1;
 		background-size: 24px;
+		transition: none;
 
 
 		&.active {
@@ -1621,7 +1622,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					color: #999999;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 					font-weight: 400;
 					line-height: 10px;
@@ -2876,7 +2877,7 @@
 			display: flex;
 			margin-bottom: 44px;
 
-			& + .sidebar {
+			&+.sidebar {
 				display: none;
 			}
 		}
