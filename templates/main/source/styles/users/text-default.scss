@@ -551,6 +551,17 @@
 				line-height: 22px;
 			}
 
+			ul {
+				li {
+
+					margin-left: 16px;
+
+					p {
+						margin: 0;
+					}
+				}
+			}
+
 			&.column {
 				display: flex;
 				flex-wrap: wrap;
