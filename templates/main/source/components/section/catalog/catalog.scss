@@ -415,6 +415,7 @@
 		margin-left: 16px;
 		margin-right: auto;
 		background-size: 24px;
+		transition: none;
 
 		&.active {
 			background: url("../images/compare-ya-active.svg") no-repeat;
