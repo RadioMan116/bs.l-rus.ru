@@ -552,23 +552,18 @@
 			}
 
 			&.column {
-				ul {
-					width: 100%;
-					margin-bottom: 0;
+				display: flex;
+				flex-wrap: wrap;
 
-					&:last-of-type {
-						margin-bottom: 16px;
-					}
+				ul {
+					width: 33%;
 				}
 
 				.time {
-					b {
-						display: block;
-
-					}
+					margin-top: 14px;
 
 					br {
-						display: block;
+						display: none;
 					}
 				}
 			}
@@ -836,6 +831,28 @@
 
 			a {
 				margin-top: 22px;
+			}
+
+			&.column {
+				ul {
+					width: 100%;
+					margin-bottom: 0;
+
+					&:last-of-type {
+						margin-bottom: 16px;
+					}
+				}
+
+				.time {
+					b {
+						display: block;
+
+					}
+
+					br {
+						display: block;
+					}
+				}
 			}
 		}
 
