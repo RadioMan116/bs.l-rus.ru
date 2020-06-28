@@ -494,7 +494,7 @@
 
 			.expected-time__text {
 				color: #999999;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 19px;
 				max-width: 174px;
@@ -649,7 +649,7 @@
 			height: 40px;
 			display: flex;
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 18px;
 			padding-right: 1rem;
@@ -985,7 +985,7 @@
 		position: relative;
 		margin-bottom: 41px;
 		color: #333333;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
@@ -2003,7 +2003,7 @@
 
 		.reviews__all {
 			color: $base;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 24px;
 			white-space: nowrap;
@@ -2050,6 +2050,7 @@
 			line-height: 18px;
 			text-decoration: none;
 			justify-content: flex-start;
+			transition: none;
 
 			&:last-child {
 				margin-right: 0;
@@ -2072,6 +2073,7 @@
 				font-size: 13px;
 				background-size: 22px !important;
 				width: 101px;
+				transition: none;
 
 				&.active {
 					background: url("../images/compare-ya-active.svg") no-repeat;
@@ -2428,7 +2430,7 @@
 			display: none;
 			flex-direction: column;
 			color: #ffffff;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -2498,7 +2500,7 @@
 			display: flex;
 			// flex-wrap: wrap;
 			white-space: nowrap;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 			line-height: 17px;
@@ -2582,7 +2584,7 @@
 		div {
 			width: 100%;
 			color: #333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 			text-align: left;
@@ -2655,7 +2657,7 @@
 
 		&__text {
 			color: #262626;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 		}
@@ -2751,7 +2753,7 @@
 
 		&__subtitle {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 36px;
 			display: flex;
@@ -2859,7 +2861,7 @@
 
 					.diagram__name {
 						color: #212121;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 12px;
 						font-weight: 700;
 						line-height: 18px;
@@ -2882,7 +2884,7 @@
 					// }
 					.diagram__name {
 						color: #212121;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 12px;
 						font-weight: 700;
 						line-height: 18px;
@@ -2934,7 +2936,7 @@
 				bottom: 77px;
 				left: 0px;
 				color: #d6d6d6;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 			}
 
@@ -3008,7 +3010,7 @@
 			width: 100%;
 			padding: 0 12px;
 			color: $base;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 1;
 			display: flex;
@@ -3031,7 +3033,7 @@
 			top: -20px;
 			left: 230px;
 			color: #d6d6d6;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 		}
 
@@ -3309,7 +3311,7 @@
 
 					.characteristic-glossary__title {
 						color: #333333;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 14px;
 						font-weight: 700;
 						margin-bottom: 4px;
@@ -3317,7 +3319,7 @@
 
 					.characteristic-glossary__text {
 						color: #333333;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 12px;
 						line-height: 18px;
 						margin-bottom: 5px;
@@ -3356,7 +3358,7 @@
 
 			.characteristic__name {
 				color: #2e2e2e;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				font-weight: 700;
 			}
@@ -3414,7 +3416,7 @@
 		display: flex;
 		flex-direction: column;
 		color: #333333;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 17px;
 		margin-right: 3%;
@@ -3433,7 +3435,7 @@
 	&__type-payment {
 		display: flex;
 		color: #333333;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 12px;
 		line-height: 18px;
 		width: 100%;
@@ -3478,7 +3480,7 @@
 					left: -87px;
 					padding: 11px 11px;
 					color: #333333;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 					line-height: 18px;
 					z-index: 1;
@@ -3513,7 +3515,7 @@
 
 			&__info {
 				color: #333333;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 21px;
 
@@ -3883,7 +3885,7 @@
 
 		&__subtitle {
 			color: #666666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 24px;
 			margin-bottom: 23px;
@@ -3927,7 +3929,7 @@
 					border: 1px solid #cbcbcb;
 					background-color: #ffffff;
 					color: #999999;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 24px;
 				}
@@ -4047,7 +4049,7 @@
 
 		h6 {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 700;
 			width: 100%;
@@ -4112,7 +4114,7 @@
 
 		.popup-prop__title {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 700;
 			margin-bottom: 4px;
@@ -4120,7 +4122,7 @@
 
 		.popup-prop__text {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			line-height: 18px;
 			margin-bottom: 5px;
@@ -4860,7 +4862,7 @@
 				.characteristic__property,
 				.characteristic__copyright {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 1.29 !important;
 					text-align: left;
@@ -5356,7 +5358,7 @@
 
 				&__text {
 					color: #666666;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 19px;
@@ -5964,7 +5966,7 @@
 
 			.newsletter__subtitle {
 				color: #666666;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 18px;
 				margin-bottom: 15px;
