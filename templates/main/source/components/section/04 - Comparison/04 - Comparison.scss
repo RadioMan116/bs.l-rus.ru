@@ -187,6 +187,7 @@
 		border: solid 1px #d6d6d6;
 		border-bottom: 0;
 		background: white;
+		transition: none;
 
 		&.triangle {
 			background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
