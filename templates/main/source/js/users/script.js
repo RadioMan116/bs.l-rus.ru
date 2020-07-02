@@ -2613,5 +2613,15 @@ $(window).on('load', function () {
 
 	// })();
 
+	$(function () {
+		$("#load-items").on('click', function (e) {
+			e.preventDefault();
 
+
+			$('html,body').animate({
+				scrollTop: $('.js-news__inner .all-video__item:last-child').offset().top
+			}, 1500);
+
+		});
+	});
 });
