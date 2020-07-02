@@ -2557,6 +2557,21 @@ $(window).on('load', function () {
 		// 	}
 
 		// })();
+		$(function () {
+			let check = document.querySelector(".all-video.js-news__inner");
+			if (check) {
+				$(".all-video__bottom #load-items").on('click', function (e) {
+					e.preventDefault();
+
+
+					$('html,body').animate({
+						scrollTop: $('.js-news__inner .all-video__item:last-child').offset().top
+					}, 1500);
+
+				});
+			}
+
+		});
 	}
 
 
@@ -2613,15 +2628,5 @@ $(window).on('load', function () {
 
 	// })();
 
-	$(function () {
-		$("#load-items").on('click', function (e) {
-			e.preventDefault();
 
-
-			$('html,body').animate({
-				scrollTop: $('.js-news__inner .all-video__item:last-child').offset().top
-			}, 1500);
-
-		});
-	});
 });
