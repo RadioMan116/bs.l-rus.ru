@@ -4,9 +4,7 @@
   <g id="compare">
     <g id="compare">
       <path d="M0 0L18 0L18 18L0 18L0 0Z" id="Rectangle-5" fill="none" stroke="none" />
-      <path d="M0 0L1.875 0L1.875 13.5L0 13.5L0 0Z" transform="translate(12.75 2.25)" id="Rectangle-21" fill="#666666" stroke="none" />
-      <path d="M0 0L1.875 0L1.875 8.25L0 8.25L0 0Z" transform="translate(8.25 7.5)" id="Rectangle-21" fill="#666666" stroke="none" />
-      <path d="M0 0L1.875 0L1.875 11.25L0 11.25L0 0Z" transform="translate(3.75 4.5)" id="Rectangle-21" fill="#666666" stroke="none" />
+      <path d="M13.5 1.5L13.5 0L0 0L0 1.5L13.5 1.5ZM13.5 5.25L13.5 6.75L0 6.75L0 5.25L13.5 5.25ZM12 9L10.5 9L10.5 10.5L9 10.5L9 12L10.5 12L10.5 13.5L12 13.5L12 12L13.5 12L13.5 10.5L12 10.5L12 9ZM7.5 12L7.5 10.5L0 10.5L0 12L7.5 12Z" transform="translate(2.25 3)" id="Combined-Shape" fill="#394791" fill-rule="evenodd" stroke="none" />
     </g>
   </g>
 </svg>

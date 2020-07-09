@@ -474,7 +474,7 @@
 		font-size: 32px;
 		font-weight: 400;
 		line-height: 44px;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		margin-right: 3%;
 
 		b {
@@ -535,6 +535,26 @@
 				background: #f70000;
 				transform: rotate(-12deg);
 				bottom: 10px;
+			}
+		}
+
+		.price__info {
+			position: absolute;
+			display: flex;
+			bottom: -19px;
+			left: 0;
+
+			.price__absolute {
+				position: relative;
+				bottom: 0;
+			}
+
+			.price__difference {
+				color: #0044bb;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 20px;
+				margin-left: 6px;
 			}
 		}
 
@@ -621,7 +641,8 @@
 	}
 
 	&__icons {
-		color: $base;
+		// color: $base;
+		color: #2a91ca;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -629,7 +650,8 @@
 		text-transform: uppercase;
 		padding: 8px 12px;
 		border-radius: 2px;
-		border: 1px solid $base;
+		// border: 1px solid $base;
+		border: 1px solid #2a91ca;
 		margin-right: 8px;
 		text-decoration: none !important;
 	}
@@ -687,9 +709,9 @@
 				margin-right: 0;
 			}
 
-			// &:nth-child(2) {
-			// 	margin-right: 16px;
-			// }
+			&:nth-child(2) {
+				order: 1;
+			}
 
 			&.mobile {
 				display: none;
@@ -4168,7 +4190,7 @@
 		&__title {
 			color: #333333;
 			font-family: "Roboto Condensed";
-			font-size: 30px;
+			font-size: 28px;
 			font-weight: 400;
 			line-height: 36px;
 			text-transform: uppercase;
@@ -4192,6 +4214,22 @@
 
 			.price__absolute {
 				left: unset;
+				bottom: 0;
+				white-space: nowrap;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 20px;
+			}
+
+			.price__difference {
+				white-space: nowrap;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 20px;
+				margin-left: 2px;
+			}
+
+			.price__info {
 				bottom: 0;
 			}
 
