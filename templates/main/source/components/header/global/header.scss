@@ -232,7 +232,7 @@
 			height: 100%;
 			flex-shrink: 0;
 			margin-right: 4px;
-			background-size: contain !important;
+			background-size: 20px;
 			background-position: center center !important;
 			background: url("../images/search.svg") no-repeat;
 		}
@@ -413,7 +413,7 @@
 				border: 1px solid #ffffff;
 				background-color: #e0412b;
 				color: #ffffff !important;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 8px;
 				border-radius: 50%;
 				display: flex;
@@ -553,13 +553,13 @@
 				&:before {
 					background-size: 23px !important;
 					margin-right: 0;
-					background: url(../images/Favorite-yandex.svg) no-repeat;
+					// background: url(../images/Favorite-yandex.svg) no-repeat;
 				}
 
 				&:after {
 					content: 'Отложенное';
-					color: #333333;
-					font-family: Arial,sans-serif;
+					color: #212c89;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 18px;
@@ -594,13 +594,13 @@
 				&:before {
 					background-size: 23px !important;
 					margin-right: 0;
-					background: url(../images/compare-ya.svg) no-repeat;
+					// background: url(../images/compare-ya.svg) no-repeat;
 				}
 
 				&:after {
 					content: 'Сравнение';
-					color: #333333;
-					font-family: Arial,sans-serif;
+					color: #212c89;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 18px;
@@ -626,11 +626,12 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
-				margin: 0 26px 0 21px;
+				order: -1;
 
 				&:before {
-					background-size: 22px !important;
+					background-size: 18px;
 					margin-right: 0;
+					width: 18px;
 				}
 
 				&:hover {
@@ -670,15 +671,16 @@
 			// }
 
 			&__mobile-tel {
-				width: 24px;
+				width: 18px;
 				height: 100%;
 				display: flex;
 				background: url('../images/Fill_1.svg') no-repeat;
 				background-position: center center;
 				margin-right: 0px;
 				order: -1;
-				background-size: 17px !important;
+				background-size: 18px !important;
 				align-items: center;
+				margin: 0 24px;
 			}
 
 			&__basket {
@@ -726,7 +728,7 @@
 
 				.header__call-phone-button {
 					color: $base;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 10px;
 					line-height: 22px;
 					display: flex;

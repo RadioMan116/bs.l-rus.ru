@@ -550,7 +550,7 @@
 			}
 
 			.price__difference {
-				color: #0044bb;
+				color: #2A91CA;
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 20px;
@@ -679,7 +679,8 @@
 			// flex-basis: 170px;
 			align-items: center;
 			margin-bottom: 8px;
-			margin-right: 24px;
+			margin-right: 56px;
+
 
 
 			img {
@@ -705,12 +706,17 @@
 				display: none;
 			}
 
-			&:last-child {
-				margin-right: 0;
+			&:first-child {
+				margin-right: 30px;
+			}
+
+			&:nth-child(3) {
+				margin-right: 56px;
 			}
 
 			&:nth-child(2) {
 				order: 1;
+				margin-right: 0;
 			}
 
 			&.mobile {
@@ -4196,6 +4202,15 @@
 			text-transform: uppercase;
 			margin-bottom: 24px !important;
 			margin-top: 18px;
+			display: flex;
+			flex-direction: column;
+
+			span {
+				color: #979797;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+			}
 		}
 
 		.product-card__price {
