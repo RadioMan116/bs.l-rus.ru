@@ -114,6 +114,30 @@
 			.dropdown-menu__item {
 				display: flex;
 				flex-direction: column;
+
+				&.banner {
+					a {
+						background: $base;
+						padding: 16px 23px;
+						margin-left: 21px;
+						text-decoration: unset !important;
+						margin-top: 19px;
+					}
+
+					span {
+						color: #ffffff;
+						font-size: 18px;
+						font-weight: 400;
+						line-height: 24px;
+						text-transform: uppercase;
+						display: flex;
+						flex-direction: column;
+						padding: 0;
+
+					}
+
+
+				}
 			}
 
 			.dropdown-menu__link {
@@ -178,89 +202,92 @@
 		display: none;
 	}
 
-	&.new-menu {
-		height: 100%;
-
-		.dropdown-menu {
-			position: static;
+	@media (min-width: 768px) {
+		&.new-menu {
 			height: 100%;
-			margin-bottom: 0;
 
 			.dropdown-menu {
+				position: static;
+				height: 100%;
+				margin-bottom: 0;
 
-				&__parent {
-					left: 0;
-					width: 100%;
-					top: calc(100% - 7px);
-				}
+				.dropdown-menu {
 
-				&__list {
-					margin: 0;
-					flex-direction: row;
-					flex-wrap: wrap;
-					justify-content: space-between;
-					overflow: auto;
-					padding: 32px 18px;
-
-				}
-
-				&__title {
-					height: calc(100% - 12px);
-					align-items: center;
-					display: flex;
-
-					&.active {
-						box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
-					}
-				}
-
-				&__item {
-					width: calc(100%/3);
-					background-repeat: no-repeat !important;
-					background-position: 21px 19px !important;
-					margin-bottom: 22px;
-
-					&:nth-of-type(3n+2) {
-						width: 31%;
+					&__parent {
+						left: 0;
+						width: 100%;
+						top: calc(100% - 7px);
 					}
 
+					&__list {
+						margin: 0;
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						overflow: auto;
+						padding: 32px 18px;
 
-					&.banner {
-						a {
-							background: $base;
-							padding: 16px 23px;
-							margin-left: 21px;
+					}
+
+					&__title {
+						height: calc(100% - 12px);
+						align-items: center;
+						display: flex;
+
+						&.active {
+							box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 						}
+					}
 
-						span {
-							color: #ffffff;
-							font-size: 18px;
-							font-weight: 400;
-							line-height: 24px;
-							text-transform: uppercase;
-							display: flex;
-							flex-direction: column;
-							padding-left: 0;
+					&__item {
+						width: calc(100%/3);
+						background-repeat: no-repeat !important;
+						background-position: 21px 19px !important;
+						margin-bottom: 22px;
+
+						&:nth-of-type(3n+2) {
+							width: 31%;
 						}
 
 
+
+					}
+
+					&__link {
+						padding: 19px 16px 5px 86px;
+						background: unset;
+					}
+
+
+				}
+
+				.sub-menu__item {
+					padding-right: 16px;
+					padding-left: 56px;
+
+					.sub-menu__link::before {
+						content: " ∙ ";
 					}
 				}
 
-				&__link {
-					padding: 19px 16px 9px 86px;
-					background: unset;
-				}
+				.sub-menu__list {}
 
+				&:nth-of-type(2) {
+					.dropdown-menu {
+						&__item {
+							width: calc(100%/4);
+							background-position: 21px 5px !important;
+						}
 
-			}
+						&__list {
+							justify-content: unset;
+						}
 
-			.sub-menu__item {
-				padding-right: 16px;
-				padding-left: 61px;
-
-				.sub-menu__link::before {
-					content: " ∙ ";
+						&__link {
+							padding: 19px 16px 19px 86px;
+							// background: unset;
+						}
+					}
 				}
 			}
 		}
@@ -415,7 +442,7 @@
 		}
 
 		.sub-menu__list {
-			padding-left: 13px;
+			padding-left: 8px;
 			margin-bottom: 14px;
 		}
 
@@ -425,7 +452,12 @@
 			font-weight: 400;
 			padding: 3px 0;
 			line-height: 28px;
+
+			&::before {
+				content: " ∙ ";
+			}
 		}
+
 
 		.dropdown-menu__link {
 			padding: 3px 0;
@@ -434,6 +466,25 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
+		}
+
+		.dropdown-menu__item {
+			background: none !important;
+
+			&.banner {
+				a {
+					margin: 0 auto 24px 0 !important;
+				}
+
+				span {
+					background: none;
+					font-size: 16px;
+					height: auto;
+					display: flex;
+					font-size: 16px;
+					padding: 9px 11px;
+				}
+			}
 		}
 	}
 
