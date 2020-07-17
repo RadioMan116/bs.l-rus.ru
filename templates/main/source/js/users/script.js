@@ -1644,7 +1644,7 @@ $(document).ready(function () {
 
 					return false;
 				});
-				$(".js-comparison__select.active").trigger('click');
+				// $(".js-comparison__select.active").trigger('click');
 
 				$(document).click(function () {
 					$(butt).removeClass("down");
