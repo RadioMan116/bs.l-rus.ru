@@ -1644,7 +1644,7 @@ $(document).ready(function () {
 
 					return false;
 				});
-				$(".js-comparison__select.active").trigger('click');
+
 
 				$(document).click(function () {
 					$(butt).removeClass("down");
@@ -2449,7 +2449,7 @@ $(window).on('load', function () {
 			}
 		});
 
-
+		$(".js-comparison__select.active").trigger('click');
 	}
 
 	if ($('a[data-fancybox="gallery"] img').length) {
