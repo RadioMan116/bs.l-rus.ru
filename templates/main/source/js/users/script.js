@@ -714,16 +714,16 @@ $(document).ready(function () {
 
 		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseover", function (event) {
 			// $('body').css('overflow','hidden');
-			$('body').addClass('fixed');
+			// $('body').addClass('fixed');
 		});
 		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseout", function (event) {
 			// $('body').css('overflow','visible');
-			$('body').removeClass('fixed');
+			// $('body').removeClass('fixed');
 		});
-		// document.querySelectorAll('.dropdown-menu__item').forEach(element => {
-		// 	let url = element.getAttribute('data-bg');
-		// 	element.style.background = `url('${url}')`;
-		// })
+		document.querySelectorAll('.dropdown-menu__item').forEach(element => {
+			let url = element.getAttribute('data-bg');
+			element.style.background = `url('${url}')`;
+		})
 	});
 	$(".js-menu-footer__title").click(function (event) {
 		if (
@@ -1120,6 +1120,11 @@ $(document).ready(function () {
 			$('.articles-main__slider .catalog__text').matchHeight();
 			$('.articles-main__slider  .catalog__specification').matchHeight();
 		});
+		(() => {
+			if ($('.catalog .js-recently-watched').length) {
+				$('.col-md-3 .sidebar').css('padding-bottom', '400px')
+			}
+		})()
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
@@ -1616,6 +1621,7 @@ $(document).ready(function () {
 					indexRows: 1,
 					zebra: true,
 					zebraClass: "gray_row",
+					hideShowRows: "DIFF",
 					callback: function () {
 
 					}
@@ -1628,21 +1634,23 @@ $(document).ready(function () {
 					e.stopPropagation();
 
 					if ($(this).hasClass("down")) {
-						$(ul).slideUp(200);
+						// $(ul).slideUp(200);
 						$(this).removeClass("down");
 					} else {
-						$(ul).slideDown(200);
+						// $(ul).slideDown(200);
 						$(this).addClass("down");
 					}
 
 
 					return false;
 				});
+				$(".js-comparison__select.active").trigger('click');
 
 				$(document).click(function () {
 					$(butt).removeClass("down");
-					$(ul).slideUp(200);
+					// $(ul).slideUp(200);
 				});
+
 			});
 
 			$(".js-comparison-height").parent().parent().addClass('thead__comparison');

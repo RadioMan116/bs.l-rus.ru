@@ -510,13 +510,13 @@
 
 }
 
-@media screen and (min-width: 768px) {
-	.content-top[data-bg-custom]+.content .col-md-3 {
-		.bx-filterfilter-new+.sidebar {
-			padding-bottom: 400px;
-		}
-	}
-}
+// @media screen and (min-width: 768px) {
+// 	.content-top[data-bg-custom]+.content .col-md-3 {
+// 		.bx-filter.filter-new+.sidebar {
+// 			padding-bottom: 400px;
+// 		}
+// 	}
+// }
 
 
 * {
@@ -852,7 +852,7 @@
 
 		i {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			text-transform: uppercase;
 			font-style: normal;
