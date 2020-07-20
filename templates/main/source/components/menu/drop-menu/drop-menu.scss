@@ -458,6 +458,10 @@
 			// }
 		}
 
+		// .sub-menu__item {
+		// 	flex-wrap: wrap;
+		// 	align-items: center;
+		// }
 
 		.dropdown-menu__link {
 			padding: 3px 0;
@@ -472,6 +476,8 @@
 			background: none !important;
 
 			&.banner {
+				display: none !important;
+
 				a {
 					margin: 0 auto 24px 0 !important;
 				}
