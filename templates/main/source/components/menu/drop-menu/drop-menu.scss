@@ -486,6 +486,16 @@
 				}
 			}
 		}
+
+		&.new-menu {
+			.sub-menu__link {
+
+
+				&::before {
+					content: " ∙ ";
+				}
+			}
+		}
 	}
 
 	.menu__item {
@@ -506,6 +516,8 @@
 			}
 		}
 	}
+
+
 
 }
 
