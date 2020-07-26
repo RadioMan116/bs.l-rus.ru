@@ -1451,7 +1451,7 @@
 		}
 	}
 
-	input#del_filter {
+	.bx-filter-button-box .btn.btn-link {
 		display: flex;
 		align-items: center;
 		width: 100%;
@@ -1688,7 +1688,7 @@
 				}
 			}
 
-			input#del_filter {
+			.bx-filter-button-box .btn.btn-link {
 				display: flex;
 				align-items: center;
 				width: 176px;
