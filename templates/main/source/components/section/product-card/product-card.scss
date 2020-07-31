@@ -4324,9 +4324,7 @@
 					margin-right: unset !important;
 				}
 
-				&.mobile {
-					margin-bottom: 1rem;
-				}
+
 			}
 		}
 
@@ -5959,6 +5957,7 @@
 					padding-bottom: 1px;
 					display: flex;
 					text-decoration: none !important;
+					margin-bottom: 1rem;
 
 					a {
 						text-decoration: none !important;
