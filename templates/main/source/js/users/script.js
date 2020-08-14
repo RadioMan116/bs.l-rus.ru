@@ -1963,6 +1963,26 @@ $(document).ready(function() {
 			// }
 		}
 	}
+	tippy('.link-pop-glossary .icons-prop-item', {
+		// change these to your liking
+		arrow: true,
+		placement: 'top', // top, right, bottom, left
+		// trigger: 'click',
+		distance: 15, //px or string
+		// maxWidth: 300, //px or string
+		interactive: true,
+		// leave these as they are
+		// followCursor: true,
+		allowHTML: true,
+		theme: 'light',
+		appendTo: () => document.body,
+		// ignoreAttributes: true,
+		content(reference) {
+			const title = reference.getAttribute('title');
+			reference.removeAttribute('title');
+			return title;
+		},
+	});
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
