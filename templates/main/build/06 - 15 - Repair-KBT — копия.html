@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<!-- <li class="menu__item">
+			<a href="06 - 01 - About us_desktop.html" class="menu__link">О Bosch</a>
+		</li> -->
+								<li class="menu__item">
+									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+								</li>
+								<li class="menu__item">
+									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
+						</div>
+						<!--end menu-->
+
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu new-menu" id="js-menu">
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Крупная бытовая техника</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg="images/menu.png">
+											<a class="dropdown-menu__link" href="/bosch/holodilniki/" title="Холодильники">Холодильники</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Однокамерные холодильники" href="/bosch/holodilniki/odnokamernye-holodilniki/">Однокамерные холодильники
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Двухкамерные холодильники" href="/bosch/holodilniki/dvuhkamernye-holodilniki/">Двухкамерные холодильники
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Холодильники Side-by-side" href="/bosch/holodilniki/Side-by-side/">Холодильники Side-by-side
+													</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-2.png">
+											<a class="dropdown-menu__link" href="/bosch/varochnye-paneli/" title="Варочные панели">Варочные панели
+											</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Газовые варочные поверхности" href="/bosch/varochnye-paneli/gazovye/">Газовые варочные поверхности
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Варочные панели варио" href="/bosch/varochnye-paneli/vario/">Варочные панели варио
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Электрические варочные поверхности" href="/bosch/varochnye-paneli/elektricheskie/">Электрические варочные поверхности</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Индукционныеварочные поверхности" href="/bosch/varochnye-paneli/elektricheskie/">Индукционные варочные поверхности</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-3.png">
+											<a class="dropdown-menu__link" href="/bosch/vytjazhki/" title="Вытяжки">Вытяжки</a>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title=" Козырьковые вытяжки" href="#">
+														Козырьковые вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Встраиваемые вытяжки" href="#">
+														Встраиваемые вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Каминные вытяжки" href="#">
+														Каминные вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title=" Наклонные вытяжки" href="#">
+														Наклонные вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Островные вытяжки" href="#">
+														Островные вытяжки
+													</a>
+												</li>
+
+											</ul>
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/menu-4.png">
+											<a class="dropdown-menu__link" href="/bosch/holodilniki/" title="Морозильники">Морозильники</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Встраиваемые морозильники" href="/bosch/holodilniki/odnokamernye-holodilniki/">Встраиваемые морозильники
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Отдельностоящие морозильники" href="/bosch/holodilniki/dvuhkamernye-holodilniki/">Отдельностоящие морозильники
+													</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-5.png">
+											<a class="dropdown-menu__link" href="/bosch/duhovye-shkafy/" title="Духовые шкафы">Духовые шкафы</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Газовые духовые шкафы" href="/bosch/duhovye-shkafy/gazovye/">Газовые духовые шкафы
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Электрические духовые шкафы" href="/bosch/duhovye-shkafy/elektricheskie/">Электрические духовые шкафы
+													</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-6.png">
+											<a class="dropdown-menu__link" href="/bosch/mikrovolnovye-pechi/" title="Микроволновые печи">Микроволновые печи
+											</a>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Встраиваемые микроволновые печи" href="#">
+														Встраиваемые микроволновые печи
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Отдельностоящие микроволновые печи" href="#">
+														Отдельностоящие микроволновые печи
+													</a>
+												</li>
+
+											</ul>
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/menu-7.png">
+											<a class="dropdown-menu__link" href="/bosch/stiralnye-mashiny/" title="Стиральные машины">Стиральные машины
+											</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Стиральные машины с фронтальной загрузкой" href="/bosch/stiralnye-mashiny/frontalnaja-zagruzka/">Стиральные машины с фронтальной загрузкой
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Стиральные машины с вертикальной загрузкой" href="/bosch/stiralnye-mashiny/vertikalnaja-zagruzka/">Стиральные машины с вертикальной загрузкой
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Стирально-сушильные машины" href="/bosch/stiralnye-mashiny/vertikalnaja-zagruzka/">Стирально-сушильные машины
+													</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-8.png">
+											<a class="dropdown-menu__link" href="/bosch/plity/" title="Плиты">Плиты</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Газовые плиты" href="/bosch/plity/gazovye-plity/">Газовые плиты
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Комбинированные плиты" href="/bosch/plity/kombinirovannye/">Комбинированные плиты
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Электрические плиты" href="/bosch/plity/elektricheskie-plity/">Электрические плиты
+													</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-9.png">
+											<a class="dropdown-menu__link" href="/bosch/kofemashiny/" title="Кофемашины">Кофемашины</a>
+
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Встраиваемые кофемашины" href="/bosch/kofemashiny/vstraivaemye-kofemashiny/">Встраиваемые кофемашины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Отдельностоящие кофемашины" href="/bosch/kofemashiny/otdelnostoyashchie-kofemashiny/">Отдельностоящие кофемашины</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/menu-10.png">
+											<a class="dropdown-menu__link" href="/bosch/sushilnye-mashiny/" title="Сушильные машины">Сушильные машины
+											</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Конденсационные сушильные машины" href="/bosch/holodilniki/odnokamernye-holodilniki/">Конденсационные сушильные машины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Сушильные машины с тепловым насосом" href="/bosch/holodilniki/dvuhkamernye-holodilniki/">Сушильные машины с тепловым насосом
+													</a>
+												</li>
+											</ul>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/menu-11.png">
+											<a class="dropdown-menu__link" href="/bosch/posudomoechnye-mashiny/" title="Посудомоечные машины">Посудомоечные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Встраиваемые посудомоечные машины" href="#">
+														Встраиваемые посудомоечные машины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" title="Отдельностоящие посудомоечные машины" href="#">
+														Отдельностоящие посудомоечные машины
+													</a>
+												</li>
+
+											</ul>
+
+										</li>
+										<li class="dropdown-menu__item banner">
+											<a href="" title="Получите Лучшее предложение!" class="" data-ajax="" data-action="wantGoodPrice" data-url="ajax/banner.html">
+
+												<span class="dropdown-menu__link">Выгоднее в комплекте <b>предложения от 30 980 руб.</b>
+												</span>
+											</a>
+
+										</li>
+
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu ">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Малая бытовая техника</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item" data-bg="images/Электрочайники.png">
+											<a class="dropdown-menu__link" href="/bosch/elektrochajniki/" title="Электрочайники">Электрочайники</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Тостеры.png">
+											<a class="dropdown-menu__link" href="/bosch/tostery/" title="Тостеры">Тостеры</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Кофеварки.png">
+											<a class="dropdown-menu__link" href="/bosch/kofevarki/" title="Кофеварки">Кофеварки</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Кофемолки.png">
+											<a class="dropdown-menu__link" href="/bosch/kofemolki/" title="Кофемолки">Кофемолки</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Соковыжималки.png">
+											<a class="dropdown-menu__link" href="/bosch/sokovyzhimalki/" title="Соковыжималки">Соковыжималки</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Миксеры.png">
+											<a class="dropdown-menu__link" href="/bosch/miksery/" title="Миксеры">Миксеры</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Блендеры.png">
+											<a class="dropdown-menu__link" href="/bosch/blendery/" title="Блендеры">Блендеры</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Комбайны.png">
+											<a class="dropdown-menu__link" href="/bosch/kombajny/" title="Комбайны">Комбайны</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Мясорубки.png">
+											<a class="dropdown-menu__link" href="/bosch/mjasorubki/" title="Мясорубки">Мясорубки</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Пылесосы.png">
+											<a class="dropdown-menu__link" href="/bosch/pylesosy/" title="Пылесосы">Пылесосы</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Утюг.png">
+											<a class="dropdown-menu__link" href="/bosch/utjugi/" title="Утюги">Утюги</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Гладильные-системы.png">
+											<a class="dropdown-menu__link" href="/bosch/gladilnye-sistemy/" title="Гладильные системы">Гладильные системы</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Весы.png">
+											<a class="dropdown-menu__link" href="/bosch/vesy/" title="Весы">Весы</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Фены-и-выпрямители.png">
+											<a class="dropdown-menu__link" href="/bosch/feny-i-vyprjamiteli/" title="Фены и выпрямители">Фены и выпрямители
+											</a>
+
+										</li>
+
+										<li class="dropdown-menu__item" data-bg="images/Аксессуары.png">
+											<a class="dropdown-menu__link" href="/bosch/aksessuary/" title="Аксессуары">Аксессуары</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="/bosch/type-nov/" title="Новинки">Новинки</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:+74955405310" class="header__phone">+7 495 540-53-10</a>
+									<a href="tel:+78005558523" class="header__phone">+7 800 555-85-23</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00
+									</div>
+									<a href="mailto:shop@jacky-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@jacky-rus.ru</a>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<div class="d-flex flex-column-reverse flex-md-row">
+						<div class="col-md-3">
+							<div class="sidebar">
+
+								<ul class="work-link">
+									<li class="work-link__item">
+										<a class="work-link__a" href="/service/">Сервисные центры</a>
+									</li>
+									<li class="work-link__item">
+										<a class="work-link__a" href="/documentation/">Техническая документация</a>
+									</li>
+									<li class="work-link__item">
+										<a class="work-link__a" href="/warranty/">Официальная гарантия</a>
+									</li>
+								</ul>
+								<div class="yandex">
+									<div class="yandex__inner">
+										<div class="yandex__logo">
+											<img src="images/ylogo.png" alt="" srcset="" class="yandex__img">
+										</div>
+										<div class="yandex__ratings">
+											<img src="images/5-stars.png" alt="" srcset="">
+										</div>
+										<a href="#" target="_blank" class="yandex__button">Оставить отзыв</a>
+										<a href="#" target="_blank" class="yandex__button">Читать все отзывы</a>
+									</div>
+								</div>
+								<div class="quality">
+									<span class="quality__title">Контроль качества</span>
+									<span class="quality__text">Номер для претензий и предложений:</span>
+									<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
+									<span class="quality__worktime">с 9:00 до 18:00</span>
+									<a href="#" class="quality__button" id="js-quality-opener">Написать</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-9">
+							<div class="breadcrumbs">
+								<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+									<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="/" title="Главная" itemprop="item">
+											<span itemprop="name">Bosch</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</div>
+									<div class="breadcrumbs__sep">/</div>
+									<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<span itemprop="name">Ремонт Bosch</span>
+										<a itemprop="item" href="" title=""></a>
+										<meta itemprop="position" content="3">
+									</div>
+								</div>
+							</div>
+							<h1 class="title">
+								Ремонт Bosch
+							</h1>
+							<div class="text-default repair">
+								<h4>
+									Если у вас гарантийный случай
+								</h4>
+								<blockquote>
+									<p>
+										На технику Bosch распространяется гарантия — 1 год с момента продажи. Гарантия действует только на приборы, которые эксплуатировались в домашних условиях.
+
+									</p>
+									<p>
+										Срок гарантии на комплектующие — 3 месяца. Комплектующими считаются изделия, которые можно демонтировать без использования инструментов: полки, корзины, ящики, решетки, насадки, шланги. Такой же срок — три месяца — действует на новые комплектующие, которые
+										были установлены при проведении гарантийного либо платного ремонта.
+									</p>
+									<a href="">Подробнее о гарантийном ремонте</a>
+								</blockquote>
+								<h4>
+									Если у вас не гарантийный случай
+								</h4>
+								<blockquote id="claim-docs">
+
+									<p>Если срок гарантии закончился, то вы можете заполнить заявку на нашем сайте
+										<b>на ремонт</b>*:</p>
+
+									<ul>
+										<li style="list-style: disc;">стиральной</li>
+
+										<li style="list-style: disc;">сушильной</li>
+
+										<li style="list-style: disc;">посудомоечной машины.</li>
+									</ul>
+
+									<p>Укажите ваш правильный телефон, категорию техники и кратко опишите проблему.
+									</p>
+
+									<p>С вами свяжется специалист сервисного центра, чтобы уточнить параметры заявки и время обслуживания.</p>
+
+									<p><b>Время работы:</b> Пн.-Пт. 8:30 — 24:00.</p>
+
+									<p><b>*Актуально для г. Москва.</b>
+									</p>
+
+								</blockquote>
+								<div class="return-exchange__item">
+									<h3>
+										Форма для заявки
+									</h3>
+									<form name="" action="" method="post" enctype="" class="return-exchange__form">
+										<input type="hidden" name="" value="">
+										<input type="hidden" name="" value="">
+										<div class="return-exchange__field">
+											<span class="return-exchange__name">Представьтесь, пожалуйста
+												<span class="return-exchange__required">*</span>
+											</span>
+											<input required type="text" name="" value="" class="return-exchange__input" title="Представьтесь, пожалуйста *">
+											<span class="return-exchange__error-text"></span>
+										</div>
+										<div class="return-exchange__field">
+											<span class="return-exchange__name">Телефон
+												<span class="return-exchange__required">*</span>
+											</span>
+											<input required type="text" name="F[PHONE]" value="" class="return-exchange__input" title="Телефон">
+											<span class="return-exchange__error-text"></span>
+										</div>
+										<div class="return-exchange__field">
+											<span class="return-exchange__name">Метро
+												<span class="return-exchange__required"></span>
+											</span>
+											<input type="text" name="" value="" class="return-exchange__input" title="Метро">
+											<span class="return-exchange__error-text"></span>
+										</div>
+										<div class="return-exchange__field">
+											<span class="return-exchange__name">Категория бытовой техники
+												<span class="return-exchange__required">*</span>
+											</span>
+											<select required class="return-exchange__input" name="">
+												<option value="" d2isabled="">Выберите категорию</option>
+												<option value="26">
+													стиральная машина</option>
+												<option value="27">
+													сушильная машина</option>
+												<option value="28">
+													посудомоечная машина</option>
+											</select>
+										</div>
+										<div class="return-exchange__field">
+											<span class="return-exchange__name">Опишите проблему
+												<span class="return-exchange__required">*</span>
+											</span>
+											<textarea name="" rows="" cols="" class="return-exchange__textarea" title="Причина обращения"></textarea>
+											<span class="return-exchange__error-text"></span>
+										</div>
+										<div class="return-exchange__field return-exchange__attachment">
+											<label class="checkbox checkbox_oferta ">
+												<input type="checkbox" name="" class="checkbox__input" checked="">
+												<span class="checkbox__icon"></span>
+												<span class="checkbox__text">Согласен с
+													<a href="#">использованием персональных данных</a>для обработки обращения</span>
+											</label>
+											<div class="return-exchange__error-text js-field-error-text"></div>
+										</div>
+										<div class="return-exchange__submit return-exchange__attachment">
+											<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
+										</div>
+									</form>
+									<div class="return-exchange__info">
+										*Все заявки направляются в партнерский Сервисный центр. Сайт bs-rus.ru не несет ответственности за работу Сервисного центра.
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">
+								Крупная бытовая техника
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Сушильные машины
+
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Посудомоечные машины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Холодильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Морозильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Духовые шкафы
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Варочные панели
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Плиты
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Вытяжки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Микроволновые печи
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Малая бытовая техника</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Пылесосы
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Кофемашины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Кофемолки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Кофеварки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Комбайны
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Блендеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Мясорубки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Миксеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Утюги
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Тостеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Весы
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Электрочайники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Соковыжималки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Гладильные системы
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Фены и выпрямители
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Асессуары
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">О Bosch</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Акции и статьи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Глоссарий</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Оплата и доставка</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сервис и обслуживание</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Bosch</div>
+					<a href="tel:+74955405310" class="footer__tel">+7 495 540-53-10</a>
+					<a href="tel:+78005558523" class="footer__tel">+7 800 555-85-23</a>
+					<a href="#" data-url="ajax/callback.html" data-ajax="" class="footer__call-phone-button js-callback">
+						<span>
+							Заказать звонок
+						</span>
+
+					</a>
+					<a href="mailto:shop@l-rus.ru" class="footer__email">
+						<i>Email:</i>shop@l-rus.ru</a>
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин Bosch.
+					<br>«NTK LTD TM all rights reserved»
+				</div>
+				<div class="social-items">
+					<a href="#" class="social-link vk"></a>
+					<a href="#" class="social-link fb"></a>
+					<a href="#" class="social-link tw"></a>
+					<a href="#" class="social-link ok"></a>
+				</div>
+				<a class="privacy-policy" href="https://lbhr.ret-team.ru/personal-data/">Политика конфиденциальности</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
