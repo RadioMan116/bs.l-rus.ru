@@ -876,23 +876,19 @@ $(document).ready(function() {
 			});
 		}
 	});
-	$(".js-filter-glossary").hover(function(e) {
+	$(document).on("click", ".js-filter-glossary", function(e) {
 		// e.stopPropagation();
 		// e.preventDefault();
 		var $this = $(this)
 		if ($(this).attr('data-glossary') == "show") {
 			$(this).attr('data-glossary', 'hide');
 		} else {
-			if ($(this).attr('click') == 'false') {
-				$(this).attr('click', 'true');
-				return false
-			}
 			$('.js-filter-glossary').attr('data-glossary', 'hide');
 			$(this).attr('data-glossary', 'show');
-			$(document).mouseup(function(e) { // СЃРѕР±С‹С‚РёРµ РєР»РёРєР° РїРѕ РІРµР±-РґРѕРєСѓРјРµРЅС‚Сѓ
-				if (!$this.is(e.target) // РµСЃР»Рё РєР»РёРє Р±С‹Р» РЅРµ РїРѕ РЅР°С€РµРјСѓ Р±Р»РѕРєСѓ
-					&& $this.has(e.target).length === 0) { // Рё РЅРµ РїРѕ РµРіРѕ РґРѕС‡РµСЂРЅРёРј СЌР»РµРјРµРЅС‚Р°Рј
-					$this.attr('data-glossary', 'hide'); // СЃРєСЂС‹РІР°РµРј РµРіРѕ
+			$(document).mouseup(function(e) { // событие клика по веб-документу
+				if (!$this.is(e.target) // если клик был не по нашему блоку
+					&& $this.has(e.target).length === 0) { // и не по его дочерним элементам
+					$this.attr('data-glossary', 'hide'); // скрываем его
 				}
 			});
 			var target = $this;
