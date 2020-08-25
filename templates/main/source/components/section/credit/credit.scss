@@ -6,6 +6,7 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 
 	// .credit__subtitle
@@ -162,6 +163,8 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		width: 100%;
+
 		&__subtitle {
 			color: #333333;
 			font-family: "Roboto Condensed";
@@ -169,6 +172,7 @@
 			font-weight: 400;
 			line-height: 30px;
 			margin: 8px 0 10px;
+			letter-spacing: unset;
 		}
 
 		&__list {
@@ -218,6 +222,10 @@
 				&:not(:last-of-type) {
 					border-bottom: unset;
 				}
+			}
+
+			.credit__pic {
+				height: 47px;
 			}
 		}
 
