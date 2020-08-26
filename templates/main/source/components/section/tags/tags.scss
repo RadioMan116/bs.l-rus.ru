@@ -115,7 +115,7 @@
 
 	&__title {
 		color: #212121;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 30px;
 		font-weight: 400;
 		margin-bottom: 48px;
@@ -126,7 +126,7 @@
 		border-radius: 3px;
 		border: 1px solid $base2;
 		color: $base2;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
@@ -190,7 +190,7 @@
 
 		&__title {
 			color: #212121;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 5vw;
 			font-weight: 400;
 			margin-bottom: 15px;

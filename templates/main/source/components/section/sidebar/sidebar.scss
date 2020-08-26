@@ -35,7 +35,7 @@
 
 		&__subtitle {
 			color: #333333;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -162,7 +162,7 @@
 
 		&__description {
 			color: #2e2e2e;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 22px;
@@ -225,7 +225,7 @@
 			background-color: #ffffff;
 			padding: 4px 8px 4px 15px;
 			color: #2e2e2e;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 20px;
 			font-weight: 700;
 			letter-spacing: 7px;
@@ -242,7 +242,7 @@
 		// .marking__title
 		&__title {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 28px;
@@ -252,7 +252,7 @@
 		// .marking__subtitle
 		&__subtitle {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -267,7 +267,7 @@
 		// .articles__title
 		&__title {
 			color: #212121;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 24px;
 			font-weight: 400;
 			margin-top: 0px;
@@ -359,7 +359,7 @@
 
 			span {
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 20px;
@@ -761,7 +761,7 @@
 
 	&__title {
 		color: #333333;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 36px;
@@ -801,7 +801,7 @@
 
 	&__text {
 		color: $base;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;

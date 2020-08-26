@@ -151,7 +151,7 @@
 
 		.close__filter {
 			color: $base;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -163,7 +163,7 @@
 	&__title {
 		display: flex;
 		color: #333333;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 16px;
 		margin-bottom: 16px;
 		font-weight: 400;
@@ -435,7 +435,7 @@
 		}
 
 		color: $base;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
@@ -592,7 +592,7 @@
 				right: 20px;
 				bottom: -100%;
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -727,7 +727,7 @@
 
 			span {
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -907,7 +907,7 @@
 
 		span {
 			color: #333333;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-weight: 400;
 			line-height: 24px;
 			width: auto;
@@ -965,7 +965,7 @@
 
 			&[name="del_filter"] {
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1307,7 +1307,7 @@
 
 		.filter-glossary__link {
 			color: $base;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 20px;
@@ -1452,7 +1452,7 @@
 
 			span {
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1525,7 +1525,7 @@
 			&:before {
 				content: 'Фильтр';
 				color: $base;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1558,7 +1558,7 @@
 
 				span {
 					color: $base;
-					font-family: "Roboto Condensed";
+					font-family: "Roboto Condensed", sans-serif;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 24px;
@@ -1607,7 +1607,7 @@
 
 					span {
 						color: #ffffff;
-						font-family: "Roboto Condensed";
+						font-family: "Roboto Condensed", sans-serif;
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 24px;

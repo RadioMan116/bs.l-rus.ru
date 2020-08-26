@@ -12,7 +12,7 @@
 	// .credit__subtitle
 	&__subtitle {
 		color: #212121;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 36px;
@@ -41,7 +41,7 @@
 	// .credit__text
 	&__text {
 		color: #333333;
-		font-family: Arial;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 20px;
@@ -54,7 +54,7 @@
 		border-radius: 3px;
 		border: solid 1px #2a91ca;
 		color: #2a91ca;
-		font-family: "Roboto Condensed";
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
@@ -126,7 +126,7 @@
 
 		.credit__subtitle {
 			color: #2a91ca;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 40px;
 			font-weight: 700;
 			line-height: 48px;
@@ -144,7 +144,7 @@
 		.credit__text {
 			display: flex;
 			flex-direction: column;
-			font-family: Arial;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
@@ -152,7 +152,7 @@
 
 			span {
 				color: #212121;
-				font-family: Arial;
+				font-family: Arial, sans-serif;
 				font-size: 30px;
 				font-weight: 400;
 				line-height: 34px;
@@ -167,7 +167,7 @@
 
 		&__subtitle {
 			color: #333333;
-			font-family: "Roboto Condensed";
+			font-family: "Roboto Condensed", sans-serif;
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 30px;
@@ -186,7 +186,7 @@
 
 		&__text {
 			color: #333333;
-			font-family: Arial;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 700;
 			line-height: 20px;
@@ -236,7 +236,7 @@
 
 			.credit__subtitle {
 				color: #2a91ca;
-				font-family: "Roboto Condensed";
+				font-family: "Roboto Condensed", sans-serif;
 				font-size: 40px;
 				font-weight: 700;
 				line-height: 48px;
