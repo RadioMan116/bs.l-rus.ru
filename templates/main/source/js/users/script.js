@@ -1964,7 +1964,6 @@ $(document).ready(function() {
 		arrow: true,
 		placement: 'top', // top, right, bottom, left
 		// trigger: 'click',
-		distance: 15, //px or string
 		// maxWidth: 300, //px or string
 		interactive: true,
 		// leave these as they are
@@ -1987,7 +1986,6 @@ $(document).ready(function() {
 					arrow: true,
 					placement: 'top', // top, right, bottom, left
 					// trigger: 'click',
-					distance: 15, //px or string
 					// maxWidth: 300, //px or string
 					interactive: true,
 					// leave these as they are
@@ -2005,6 +2003,18 @@ $(document).ready(function() {
 			}
 		});
 	})
+
+	function loadingAjax() {
+		$.ajax({
+			beforeSend: function() {
+				$("body").addClass('loading-ajax');
+			},
+			success: function(msg) {
+				$("body").removeClass('loading-ajax')
+			}
+		});
+	};
+	$('#load-items').click(loadingAjax);
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
