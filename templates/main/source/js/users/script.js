@@ -2429,4 +2429,20 @@ $(window).on('load', function () {
 	// 	} else {
 	// 	}
 	// })();
+
+	$("body").append(function (index) {
+		return $("<a href=\"#wrapper\" class=\"go_to_top go_to\">");
+	});
+	var btn = $(".go_to_top");
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 500) {
+			btn.addClass("visible_goto");
+		} else {
+			btn.removeClass("visible_goto");
+		}
+	});
+	btn.on("click", function (e) {
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "300");
+	});
 });

@@ -266,6 +266,43 @@ picture {
 	}
 }
 
+.go_to_top {
+	display: flex;
+	position: fixed;
+	z-index: 1000;
+	right: 45px;
+	bottom: 150px;
+	-webkit-transform: translate(0, 300px);
+	transform: translate(0, 300px);
+	color: #474646 !important;
+	text-align: center;
+	text-decoration: none;
+
+	&:after {
+		content: url("../images/go-up-button-normal-bosch.svg");
+		transition: .3s;
+	}
+	&:hover {
+		&:after {
+			content: url("../images/go-up-button-hover-bosch.svg");
+		}
+	}
+}
+
+
+.go_to_top.visible_goto {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+.to-top {
+	font-size: 20px;
+}
+
+.to-top span {
+	color: #01426a;
+}
+
 @media screen and (max-width: 767px) {
 
 	h1.title {
@@ -302,5 +339,10 @@ picture {
 
 	.fixed {
 		width: 100%;
+	}
+
+	.go_to_top {
+		right: 25px;
+		bottom: 100px;
 	}
 }
