@@ -64,16 +64,13 @@
 		.product-card__price {
 			display: flex;
 			justify-content: flex-start;
-			width: 131px;
+			margin: 0 auto 14px;
 			// width: 100%;
 			// justify-content: center;
 			// margin-right: 0;
 			// margin-bottom: 14px;
-			margin: 0 0 14px;
-			margin-right: 8px;
 			color: #333333;
 			// font-size: 36px;
-			font-weight: 400;
 			font-weight: 400;
 			font-size: 24px;
 			font-family: "Roboto Condensed", sans-serif;
@@ -333,7 +330,7 @@
 			justify-content: center;
 			order: unset;
 			order: 3;
-			margin: 9px 0 3px;
+			margin: 9px 24px 3px 0;
 			text-align: center;
 		}
 
@@ -369,7 +366,9 @@
 			}
 
 			&_middle {
-				flex-direction: column;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
 			}
 
 			&_bottom {
@@ -1859,6 +1858,10 @@
 				}
 			}
 		}
+		&__tomorrow {
+			order: 4;
+			margin: 9px 0 3px;
+		}
 	}
 
 	.swiper-pagination-bullet {
@@ -2279,7 +2282,7 @@
 
 	&__date {
 		display: flex;
-		margin-left: 24px;
+		// margin-left: 24px;
 		color: #cccccc;
 
 		&::before {
@@ -2397,11 +2400,12 @@
 	&__presence {
 		width: auto;
 		height: 24px;
-		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-top: 0;
+		margin-bottom: 0;
 		color: #60be34;
+		font-family: Arial;
 		font-size: 14px;
-		font-family: Arial, sans-serif;
+		margin-right: 16px;
 
 		&.red {
 			color: #d92300;
@@ -5808,6 +5812,26 @@
 			font-size: 14px;
 			font-family: "Roboto Condensed", sans-serif;
 			line-height: 20px;
+		}
+	}
+	&__tomorrow {
+		color: #60be34;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+		margin-right: 16px;
+		display: flex;
+
+		align-items: center;
+		&:before {
+			content: "";
+			width: 18px;
+			height: 18px;
+			background-image: url(../images/delivery-truck.svg);
+			background-size: contain;
+			margin-right: 5px;
+			background-repeat: no-repeat;
 		}
 	}
 }
