@@ -1,205 +1,15 @@
 .header__dropdown-menu {
 	display: flex;
-	align-items: center;
-	margin-left: 6%;
 	// margin-left:auto;
 	// margin-top: auto;
 	// margin-bottom: auto;
 	flex-grow: 1;
+	align-items: center;
+	margin-left: 6%;
 	padding-left: 11px;
-
-	.container {
-		display: flex;
-	}
-
-	.dropdown-menu {
-		position: relative;
-		display: flex;
-		align-items: center;
-		margin-bottom: 4px;
-
-		&__list {
-			margin: 0;
-			padding: 12px 0 0 0;
-			list-style-type: none;
-			display: none;
-			flex-direction: column;
-
-			background-color: #ffffff;
-			margin-top: 10px;
-
-			max-height: calc(100vh - 95px);
-		}
-
-		&:nth-child(2) {
-			margin-left: 7px;
-		}
-
-		&:nth-child(3) {
-			margin-left: 2px;
-		}
-
-		&__title {
-			font-family: 'Roboto Condensed', sans-serif;
-			font-size: 18px;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: condensed;
-			line-height: normal;
-			padding: 9px 35px 9px 17px;
-			color: #333333;
-			box-shadow: 0 2px 21px 0 transparent;
-			letter-spacing: 0.1px;
-			cursor: pointer;
-			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat;
-			white-space: nowrap;
-
-			&.last {
-				background: unset !important;
-
-				a {
-					color: #333333;
-				}
-
-				&:hover {
-					a {
-						color: $base;
-						text-decoration: none;
-					}
-				}
-			}
-
-			&:hover {
-
-				color: $base;
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
-			}
-
-			&.last {
-				padding: 9px 30px 9px 22px;
-			}
-
-		}
-
-		&__link {
-			font-family: 'Roboto Condensed', sans-serif;
-			font-size: 16px;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: condensed;
-			letter-spacing: normal;
-			color: #333333;
-			padding: 9px 16px;
-			color: #333333;
-			cursor: pointer;
-			background: #ffffff;
-
-			&:hover {
-				color: $base;
-				text-decoration: underline;
-			}
-		}
-
-		&.active {
-
-
-			.dropdown-menu__list {
-				display: flex;
-				overflow-y: scroll;
-				margin-right: -21px;
-				padding-right: 20px;
-
-			}
-
-			.dropdown-menu__item {
-				display: flex;
-				flex-direction: column;
-
-				&.banner {
-					a {
-						background: $base;
-						padding: 16px 23px;
-						margin-left: 21px;
-						text-decoration: unset !important;
-						margin-top: 19px;
-					}
-
-					span {
-						color: #ffffff;
-						font-size: 18px;
-						font-weight: 400;
-						line-height: 24px;
-						text-transform: uppercase;
-						display: flex;
-						flex-direction: column;
-						padding: 0;
-
-					}
-
-
-				}
-			}
-
-			.dropdown-menu__link {
-				white-space: nowrap;
-			}
-
-			.dropdown-menu__title {
-				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
-				z-index: 999;
-				position: relative;
-				color: $base;
-				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97%/14px no-repeat;
-			}
-
-			.dropdown-menu__parent {
-				position: absolute;
-				overflow: hidden;
-				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.1);
-				z-index: 99999;
-				top: 40px;
-			}
-
-		}
-	}
-
-	.header__banner {
-		width: 30%;
-	}
-
-	.sub-menu__list {
-		display: flex;
-		flex-direction: column;
-		padding-left: 30px;
-		list-style: none;
-	}
-
-
-	.sub-menu__item {
-		display: flex;
-		padding-right: 16px;
-	}
-
-	.sub-menu__link,
-	.sub-menu__item {
-		color: #333333;
-		font-family: "Roboto Condensed", sans-serif;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 29px;
-		white-space: nowrap;
-
-		&:hover {
-			color: $base;
-		}
-	}
 
 	@media (max-width: 1200px) {
 		margin-left: 2%;
-	}
-
-	.time-work {
-		display: none;
 	}
 
 	@media (min-width: 768px) {
@@ -214,28 +24,27 @@
 				.dropdown-menu {
 
 					&__parent {
+						top: calc(100% - 7px);
 						left: 0;
 						width: 100%;
-						top: calc(100% - 7px);
 					}
 
 					&__list {
-						margin: 0;
-						flex-direction: row;
 						flex-wrap: wrap;
+						flex-direction: row;
 						justify-content: space-between;
 						overflow: auto;
+						margin: 0;
 						padding: 32px 18px;
-
 					}
 
 					&__title {
-						height: calc(100% - 12px);
-						align-items: center;
 						display: flex;
+						align-items: center;
+						height: calc(100% - 12px);
 
 						&.active {
-							box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+							box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
 						}
 					}
 
@@ -248,17 +57,12 @@
 						&:nth-of-type(3n+2) {
 							width: 31%;
 						}
-
-
-
 					}
 
 					&__link {
 						padding: 19px 16px 5px 86px;
 						background: unset;
 					}
-
-
 				}
 
 				.sub-menu__item {
@@ -292,6 +96,197 @@
 			}
 		}
 	}
+
+	.container {
+		display: flex;
+	}
+
+	.dropdown-menu {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-bottom: 4px;
+
+		&__list {
+			display: none;
+			flex-direction: column;
+
+			max-height: calc(100vh - 95px);
+			margin: 0;
+			padding: 12px 0 0 0;
+			list-style-type: none;
+
+			background-color: #ffffff;
+			margin-top: 10px;
+		}
+
+		&__title {
+			padding: 9px 35px 9px 17px;
+			font-family: "Roboto Condensed", sans-serif;
+			font-size: 18px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: condensed;
+			line-height: normal;
+			color: #333333;
+			box-shadow: 0 2px 21px 0 transparent;
+			letter-spacing: 0.1px;
+			cursor: pointer;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat;
+			white-space: nowrap;
+
+			&:hover {
+
+				color: $base;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
+			}
+
+			&.last {
+				background: unset !important;
+
+				&:hover {
+					a {
+						color: $base;
+						text-decoration: none;
+					}
+				}
+
+				a {
+					color: #333333;
+				}
+			}
+
+			&.last {
+				padding: 9px 30px 9px 22px;
+			}
+		}
+
+		&__link {
+			padding: 9px 16px;
+			font-family: "Roboto Condensed", sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: condensed;
+			letter-spacing: normal;
+			color: #333333;
+			color: #333333;
+			cursor: pointer;
+			background: #ffffff;
+
+			&:hover {
+				color: $base;
+				text-decoration: underline;
+			}
+		}
+
+		&:nth-child(2) {
+			margin-left: 7px;
+		}
+
+		&:nth-child(3) {
+			margin-left: 2px;
+		}
+
+		&.active {
+
+
+			.dropdown-menu__list {
+				display: flex;
+				overflow-y: scroll;
+				margin-right: -21px;
+				padding-right: 20px;
+			}
+
+			.dropdown-menu__item {
+				display: flex;
+				flex-direction: column;
+
+				&.banner {
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 272px;
+						height: 81px;
+						border: solid 1px $base2;
+						padding: 16px 23px;
+						background: unset;
+						margin-left: 21px;
+						text-decoration: unset !important;
+						margin-top: 19px;
+						border-radius: 3px;
+					}
+
+					span {
+						display: flex;
+						flex-direction: column;
+						padding: 0;
+						color: #2a91ca;
+						font-size: 20px;
+						font-weight: 400;
+						line-height: 24px;
+						text-align: center;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			.dropdown-menu__link {
+				white-space: nowrap;
+			}
+
+			.dropdown-menu__title {
+				position: relative;
+				z-index: 999;
+				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
+				color: $base;
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97%/14px no-repeat;
+			}
+
+			.dropdown-menu__parent {
+				position: absolute;
+				z-index: 99999;
+				top: 40px;
+				overflow: hidden;
+				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+
+	.header__banner {
+		width: 30%;
+	}
+
+	.sub-menu__list {
+		display: flex;
+		flex-direction: column;
+		padding-left: 30px;
+		list-style: none;
+	}
+
+
+	.sub-menu__item {
+		display: flex;
+		padding-right: 16px;
+	}
+
+	.sub-menu__link, .sub-menu__item {
+		color: #333333;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 29px;
+		white-space: nowrap;
+
+		&:hover {
+			color: $base;
+		}
+	}
+
+	.time-work {
+		display: none;
+	}
 }
 
 @media (max-width: 767px) {
@@ -302,28 +297,28 @@
 	}
 
 	.header__dropdown-menu {
-		align-items: baseline;
-		width: unset;
 		display: flex;
 		flex-direction: column;
-		position: unset;
+		align-items: baseline;
 		order: -1;
+		position: unset;
+		width: unset;
 		margin-left: 0;
 		padding-left: 0;
 
 
 		.container {
+			margin: 0;
 			padding: 0;
 			padding-top: 3px;
-			margin: 0;
 		}
 
 		.dropdown-menu {
 			display: flex;
-			margin-left: 0 !important;
 			flex-wrap: wrap;
-			padding-left: 31px;
 			width: 100%;
+			margin-left: 0 !important;
+			padding-left: 31px;
 
 			&__three {
 				margin-bottom: 0;
@@ -332,12 +327,10 @@
 
 			&:first-child {
 				background: url("../images/dp-2.svg") no-repeat 0 10px;
-
 			}
 
 			&:nth-child(2) {
 				background: url("../images/dp-1.svg") no-repeat 0 10px;
-
 			}
 
 			&:nth-child(3) {
@@ -354,12 +347,12 @@
 		}
 
 		.time-work {
+			display: block;
 			color: #666;
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
-			display: block;
 
 			i {
 				color: #666;
@@ -375,36 +368,40 @@
 		.header__telephones {
 			display: flex;
 			flex-wrap: wrap;
-			margin-top: 0;
 			align-items: baseline;
 			order: 3;
 			max-height: 190px;
+			margin-top: 0;
 			padding-top: 1rem;
 		}
 	}
 
 	.menu-480 {
-		.header__dropdown-menu {
-			display: none !important;
-		}
 
-		background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee")100% 50%/18px no-repeat !important;
+		background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee") 100% 50%/18px no-repeat !important;
 
 		&:hover {
 			background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 100% 50%/18px no-repeat !important;
 			background-color: #5a5a5a;
 		}
+		.header__dropdown-menu {
+			display: none !important;
+		}
 	}
 
 	.header__dropdown-menu {
 		.dropdown-menu {
+
+			.dropdown-menu__parent {
+				margin-left: -31px;
+			}
 			&__title {
+				width: 100%;
+				padding: 0;
 				font-family: "Roboto Condensed", sans-serif;
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 46px;
-				padding: 0;
-				width: 100%;
 
 				// &:hover {
 				// 	box-shadow: none !important;
@@ -415,14 +412,9 @@
 				}
 			}
 
-			.dropdown-menu__parent {
-				margin-left: -31px;
-			}
-
 			&.active {
 
-				.dropdown-menu__list,
-				.dropdown-menu__parent {
+				.dropdown-menu__list, .dropdown-menu__parent {
 					position: unset;
 					box-shadow: none;
 					padding-top: 0;
@@ -483,12 +475,12 @@
 				}
 
 				span {
+					display: flex;
+					height: auto;
+					padding: 9px 11px;
 					background: none;
 					font-size: 16px;
-					height: auto;
-					display: flex;
 					font-size: 16px;
-					padding: 9px 11px;
 				}
 			}
 		}
@@ -506,8 +498,8 @@
 
 	.menu__item {
 		display: flex;
-		position: relative;
 		flex-wrap: wrap;
+		position: relative;
 
 		&:first-child {
 
@@ -522,9 +514,6 @@
 			}
 		}
 	}
-
-
-
 }
 
 // @media (max-width: 1150px) {
