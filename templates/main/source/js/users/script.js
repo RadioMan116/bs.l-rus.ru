@@ -65,15 +65,15 @@ $(document).ready(function () {
 			}
 		};
 	}
-	// (function () {
-	// 	let bgAttr = document.querySelectorAll('.dropdown-menu__item');
-	// 	if (bgAttr) {
-	// 		bgAttr.forEach(element => {
-	// 			let url = element.getAttribute('data-bg');
-	// 			element.style.background = `url('${url}')`;
-	// 		});
-	// 	}
-	// })();
+	(function () {
+		let bgAttr = document.querySelectorAll('.dropdown-menu__item');
+		if (bgAttr) {
+			bgAttr.forEach(element => {
+				let url = element.getAttribute('data-webp');
+				element.style.background = `url('${url}')`;
+			});
+		}
+	})();
 	var windowWidth2 = $(window).width();
 	// NEW SCRIPT
 	(function () {
@@ -643,10 +643,10 @@ $(document).ready(function () {
 			// $('body').css('overflow','visible');
 			// $('body').removeClass('fixed');
 		});
-		document.querySelectorAll('.dropdown-menu__item').forEach(element => {
-			let url = element.getAttribute('data-bg');
-			element.style.background = `url('${url}')`;
-		});
+		// document.querySelectorAll('.dropdown-menu__item').forEach(element => {
+		// 	let url = element.getAttribute('data-bg');
+		// 	element.style.background = `url('${url}')`;
+		// });
 	});
 	$(".js-menu-footer__title").click(function (event) {
 		if ($(this).parent().parent().hasClass("active") == false) {
