@@ -1995,9 +1995,11 @@ $(document).ready(function () {
 		appendTo: () => document.body,
 		// ignoreAttributes: true,
 		content(reference) {
+			console.log(reference)
 			const title = reference.getAttribute('title');
+			const href = reference.getAttribute('href');
 			reference.removeAttribute('title');
-			return title;
+			return `<a href='${href}' >${title}</a>`;
 		},
 	});
 	$('.product-card .link-pop-glossary').each(function (i, el) {
