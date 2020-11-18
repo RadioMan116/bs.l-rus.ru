@@ -2343,11 +2343,12 @@
 		display: flex;
 		// margin-left: 24px;
 		color: #cccccc;
+		align-items: center;
 
 		&::before {
 			flex-shrink: 0;
 			width: 14px;
-			height: 14px;
+			height: 20px;
 			margin-right: 9px;
 			content: url("../images/price_updated.svg");
 		}
@@ -3839,7 +3840,7 @@
 		}
 
 		.reviews__all {
-			margin-right: 24px;
+			margin-right: 10px;
 			margin-left: 0;
 			color: $base;
 			font-size: 14px;
@@ -5364,9 +5365,9 @@
 		flex-direction: column;
 		width: 100%;
 		margin-bottom: 15px;
+		padding-left: 52px;
 		padding-top: 16px;
-		padding-bottom: 17px;
-		padding-left: 56px;
+		padding-bottom: 14px;
 		background: url("../images/big/truck.svg")no-repeat 0px center;
 		border-top: 1px solid #f1f1f1;
 		border-bottom: 1px solid #f1f1f1;
