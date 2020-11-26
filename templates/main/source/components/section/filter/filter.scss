@@ -1415,6 +1415,75 @@
 		text-decoration: none !important;
 	}
 
+	.three-days {
+		display: flex;
+		align-items: center;
+		margin-left: 20px;
+
+		.checkbox {
+
+			// .checkbox__input
+			&__input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+
+			// .checkbox__icon
+			&__icon {
+				top: 2px;
+			}
+
+			// .checkbox__text
+			&__text {
+				margin-left: 32px;
+			}
+		}
+
+		.filter-glossary {
+			padding-top: 0;
+
+			// .filter-glossary__title
+			&__title {}
+
+			// .filter-glossary__text
+			&__text {}
+
+			&:hover {
+				.icon-gloss {
+					width: 14px;
+					height: 14px;
+					background: url(../images/chara__off.png) no-repeat;
+				}
+			}
+		}
+
+		.js-tooltip {}
+
+		.popup-gloss {}
+	}
+	.filter__throw{
+		background: url('../images/throw.svg') 50% no-repeat;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+
+	}
+	.bx-left {
+		.filter__throw{
+			right: 5px;
+		}
+	}
+	.bx-right {
+		.filter__throw{
+			right: 22px;
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;

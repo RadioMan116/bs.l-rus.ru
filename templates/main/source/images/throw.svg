@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16px" height="16px" viewbox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="baseline-close-24px-(1)">
+    <g id="baseline-close-24px-(1)">
+      <path d="M9.33333 0.94L8.39333 0L4.66667 3.72667L0.94 0L0 0.94L3.72667 4.66667L0 8.39333L0.94 9.33333L4.66667 5.60667L8.39333 9.33333L9.33333 8.39333L5.60667 4.66667L9.33333 0.94Z" transform="translate(3.3333335 3.3333335)" id="Shape" fill="#B0B0B0" fill-rule="evenodd" stroke="none" />
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Shape" fill="none" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
