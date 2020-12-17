@@ -4,7 +4,6 @@
 	max-width: 100%;
 	padding-bottom: 0 !important;
 
-
 	&__section {
 		width: 75%;
 		display: flex;
@@ -16,7 +15,6 @@
 			max-height: 469px;
 			max-width: 770px;
 		}
-
 	}
 
 	&__slider {
@@ -47,9 +45,7 @@
 		}
 	}
 
-
 	&__title {
-
 		font-size: 36px;
 		font-weight: 500;
 		font-style: normal;
@@ -59,7 +55,6 @@
 		text-align: left;
 		color: #262626;
 		margin-bottom: 10px;
-
 	}
 
 	&__name {
@@ -75,8 +70,6 @@
 	}
 
 	&__text {
-
-
 		&_i {}
 	}
 
@@ -97,18 +90,14 @@
 		// 	display: block;
 		// 	// flex-wrap: wrap;
 		// 	margin-bottom: 36px;
-
 		// 	// align-items: baseline;
 		// 	// width: 100%;
 		// 	a {
 		// 		margin-left: 4px;
 		// 		margin-right: 2px;
 		// 	}
-
 		// }
-
 		// h2 {
-
 		// 	font-size: 20px;
 		// 	font-weight: 500;
 		// 	font-style: normal;
@@ -119,27 +108,22 @@
 		// 	color: #333333;
 		// 	margin-bottom: 20px;
 		// }
-
 		// li {
 		// 	color: #333333;
 		// 	line-height: 20px;
 		// 	text-align: left;
 		// 	font-weight: 400;
 		// 	margin-bottom: 8px;
-
 		// 	&:first-child {
 		// 		margin-top: 16px;
 		// 	}
-
 		// 	&:last-child {
 		// 		margin-bottom: 16px;
 		// 	}
 		// }
-
-
 		.article-back {
 			color: #394791;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 	}
@@ -164,8 +148,8 @@
 			padding-left: 25px;
 			align-content: baseline;
 			position: relative;
-			// margin-top: -42px;
 
+			// margin-top: -42px;
 			.articles__title {
 				margin-top: 15px;
 				margin-bottom: 14px;
@@ -183,6 +167,10 @@
 			margin-top: 43px;
 			margin-bottom: 0;
 
+			.catalog__text {
+				min-height: 95px;
+			}
+
 			.special-offers {
 				margin-top: 0;
 			}
@@ -197,7 +185,6 @@
 					height: unset !important;
 					max-height: 700px !important;
 				}
-
 			}
 
 			.swiper-pagination_2 {
@@ -217,14 +204,12 @@
 				height: auto;
 				max-width: unset;
 
-
 				&:nth-child(3n-1) {
 					margin: 10px 0;
 				}
 			}
 
 			.container {
-
 				// &:before,
 				// &:after {
 				// 	display: none;
@@ -235,7 +220,6 @@
 			// 	position: unset;
 			// 	margin-top: 24px;
 			// }
-
 			.swiper-scrollbar {
 				margin-top: 16px;
 				position: unset;
@@ -262,7 +246,6 @@
 		max-width: 100%;
 
 		label {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -280,7 +263,6 @@
 	}
 
 	.form__title {
-
 		font-size: 26px;
 		font-weight: 500;
 		font-style: normal;
@@ -396,10 +378,8 @@
 		}
 
 		.catalog__specification {
-			height: unset;
+			height: 94px !important;
 		}
-
-
 	}
 
 	.swiper-scrollbar {
@@ -414,11 +394,7 @@
 		}
 	}
 
-
-
 	@media screen and (max-width: 767px) {
-
-
 		.special-offers__title {
 			color: #212121;
 			font-family: "Roboto Condensed", sans-serif;
@@ -451,9 +427,6 @@
 
 		.articles-main__info p {
 			margin-bottom: 35px;
-
-
-
 		}
 
 		.articles-main__slider {
@@ -499,12 +472,9 @@
 				color: #333333;
 			}
 		}
-
-
 	}
 
 	@media screen and (max-width: 767px) {
-
 		.articles-main__name {
 			font-size: 16px;
 			font-weight: 500;
@@ -523,7 +493,6 @@
 
 			.special-offers__title {
 				font-size: 22px;
-
 			}
 		}
 
@@ -603,7 +572,6 @@
 				background: #394791 !important;
 			}
 		}
-
 	}
 }
 
@@ -612,8 +580,6 @@
 	margin-bottom: 34px;
 
 	.reviews {
-
-
 		&__title {}
 
 		&__top {
@@ -633,9 +599,7 @@
 			}
 		}
 
-
 		&__all {
-
 			font-size: 29px;
 			font-weight: 500;
 			font-style: normal;
@@ -651,7 +615,6 @@
 			width: 100% !important;
 			font-weight: normal !important;
 			line-height: 1.57 !important;
-
 		}
 
 		&-list__field_header {
@@ -659,7 +622,6 @@
 				width: unset !important;
 			}
 		}
-
 	}
 
 	@media screen and (max-width: 768px) {
@@ -667,7 +629,6 @@
 
 		.reviews {
 			max-width: 100%;
-
 		}
 
 		.reviews__all {
@@ -698,12 +659,10 @@
 		.add-comment__form {
 			padding: 33px 31px 22px;
 			margin-bottom: 0;
-
 		}
 	}
 
 	@media screen and (max-width: 480px) {
-
 		padding-top: 34px;
 
 		.reviews__top {
@@ -744,7 +703,6 @@
 
 			&[itemprop=author] {
 				font-size: 16px;
-
 			}
 		}
 
@@ -763,7 +721,6 @@
 				position: absolute;
 				top: 0;
 				left: 16px;
-
 			}
 
 			input,
