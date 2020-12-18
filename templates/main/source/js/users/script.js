@@ -961,7 +961,7 @@ $(document).ready(function () {
 		// });
 		$(function () {
 			$(".instructions .catalog__text").matchHeight();
-			// $(".catalog__specification").matchHeight();
+			$(".catalog__specification").matchHeight();
 			// $('.instructions .instructions__item').matchHeight();
 			let height = $(".instructions .instructions__item").height();
 			$(".instructions .instructions__items").height(height + 50);
@@ -969,17 +969,15 @@ $(document).ready(function () {
 		$(function () {
 			// $(".articles-main__slider .catalog__text").matchHeight();
 			// $(".articles-main__slider .catalog__specification").matchHeight();
-			setTimeout(() => {
-				let arrCatalogElem = document.querySelectorAll(".catalog__specification");
-				let arrHeight = [];
-				let maxHeightCatalogElem;
-				for (let prop of arrCatalogElem) {
-					arrHeight.push(prop.offsetHeight);
-					maxHeightCatalogElem = Math.max.apply(null, arrHeight);
-					prop.style.height = maxHeightCatalogElem + "px";
-				}
-			}, 500);
 
+			// let arrCatalogElem = document.querySelectorAll(".catalog__specification");
+			// let arrHeight = [];
+			// let maxHeightCatalogElem;
+			// for (let prop of arrCatalogElem) {
+			// 	arrHeight.push(prop.offsetHeight);
+			// 	maxHeightCatalogElem = Math.max.apply(null, arrHeight);
+			// 	prop.style.height = maxHeightCatalogElem + "px";
+			// }
 		});
 		(() => {
 			if ($(".catalog .js-recently-watched").length) {
