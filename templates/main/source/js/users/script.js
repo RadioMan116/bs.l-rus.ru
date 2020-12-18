@@ -961,16 +961,23 @@ $(document).ready(function () {
 		// });
 		$(function () {
 			$(".instructions .catalog__text").matchHeight();
-			$(".catalog__specification").matchHeight();
+			// $(".catalog__specification").matchHeight();
 			// $('.instructions .instructions__item').matchHeight();
 			let height = $(".instructions .instructions__item").height();
 			$(".instructions .instructions__items").height(height + 50);
 		});
-		// $(function () {
-		// 	$(".articles-main__slider .catalog__text").matchHeight();
-		// 	$(".articles-main__slider .catalog__specification").matchHeight();
-		// 	$(".articles-main__slider .catalog__prop").matchHeight();
-		// });
+		$(function () {
+			// $(".articles-main__slider .catalog__text").matchHeight();
+			// $(".articles-main__slider .catalog__specification").matchHeight();
+			let arrCatalogElem = document.querySelectorAll(".catalog__specification");
+			let arrHeight = [];
+			let maxHeightCatalogElem;
+			for (let prop of arrCatalogElem) {
+				arrHeight.push(prop.offsetHeight);
+				maxHeightCatalogElem = Math.max.apply(null, arrHeight);
+				prop.style.height = maxHeightCatalogElem + "px";
+			}
+		});
 		(() => {
 			if ($(".catalog .js-recently-watched").length) {
 				$(".col-md-3 .sidebar").css("padding-bottom", "400px");
